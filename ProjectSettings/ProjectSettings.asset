@@ -162,8 +162,8 @@ PlayerSettings:
     iPhone: 0
     tvOS: 0
   overrideDefaultApplicationIdentifier: 0
-  AndroidBundleVersionCode: 21
-  AndroidMinSdkVersion: 29
+  AndroidBundleVersionCode: 23
+  AndroidMinSdkVersion: 32
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 0
   aotOptions: 
@@ -256,7 +256,7 @@ PlayerSettings:
   AndroidTargetDevices: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: "/Users/johnsonlai/Desktop/VR\u5C08\u984C/QuestIsland.keystore"
+  AndroidKeystoreName: /Users/johnsonlai/Desktop/VR_Project/QuestIsland.keystore
   AndroidKeyaliasName: forestwizard
   AndroidEnableArmv9SecurityFeatures: 0
   AndroidBuildApkPerCpuArchitecture: 0

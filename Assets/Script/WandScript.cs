@@ -85,13 +85,13 @@ public class WandScript : MonoBehaviour
             Dictionary<string, int> stringToEnum = new Dictionary<string, int>()
             {
                 { "fox", 0 },
-                { "boar", 1 },
-                { "squirrel", 2 },
-                { "raccoon", 3 },
+                { "Boar", 1 },
+                { "Squirrel&Cricket", 2 },
+                { "Raccoon", 3 },
                 { "thrush", 4 },
                 { "grasshopper", 5 },
-                { "dove", 6 },
-                { "buck", 7 }
+                { "Dove", 6 },
+                { "Buck", 7 }
             };
 
             // Assuming `code` is the result of looking up the string from `stringToEnum`
