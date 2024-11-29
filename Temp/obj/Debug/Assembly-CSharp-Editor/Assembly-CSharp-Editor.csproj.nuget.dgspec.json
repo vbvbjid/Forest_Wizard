@@ -1,0 +1,441 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Assembly-CSharp-Editor.csproj": {}
+  },
+  "projects": {
+    "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Assembly-CSharp-Editor.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Assembly-CSharp-Editor.csproj",
+        "projectName": "Assembly-CSharp-Editor",
+        "projectPath": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Assembly-CSharp-Editor.csproj",
+        "packagesPath": "/Users/johnsonlai/.nuget/packages/",
+        "outputPath": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Temp/obj/Debug/Assembly-CSharp-Editor/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/johnsonlai/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Assembly-CSharp.csproj": {
+                "projectPath": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Assembly-CSharp.csproj"
+              },
+              "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.RenderPipelines.Universal.Config.Runtime.csproj": {
+                "projectPath": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.RenderPipelines.Universal.Config.Runtime.csproj"
+              },
+              "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Hands.Samples.Gestures.csproj": {
+                "projectPath": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Hands.Samples.Gestures.csproj"
+              },
+              "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Hands.Samples.VisualizerSample.csproj": {
+                "projectPath": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Hands.Samples.VisualizerSample.csproj"
+              },
+              "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator.csproj": {
+                "projectPath": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator.csproj"
+              },
+              "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.csproj": {
+                "projectPath": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.csproj"
+              },
+              "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.csproj": {
+                "projectPath": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.313/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Assembly-CSharp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Assembly-CSharp.csproj",
+        "projectName": "Assembly-CSharp",
+        "projectPath": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Assembly-CSharp.csproj",
+        "packagesPath": "/Users/johnsonlai/.nuget/packages/",
+        "outputPath": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Temp/obj/Debug/Assembly-CSharp/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/johnsonlai/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.RenderPipelines.Universal.Config.Runtime.csproj": {
+                "projectPath": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.RenderPipelines.Universal.Config.Runtime.csproj"
+              },
+              "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Hands.Samples.Gestures.csproj": {
+                "projectPath": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Hands.Samples.Gestures.csproj"
+              },
+              "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Hands.Samples.VisualizerSample.csproj": {
+                "projectPath": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Hands.Samples.VisualizerSample.csproj"
+              },
+              "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator.csproj": {
+                "projectPath": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator.csproj"
+              },
+              "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.csproj": {
+                "projectPath": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.csproj"
+              },
+              "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.csproj": {
+                "projectPath": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.313/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.RenderPipelines.Universal.Config.Runtime.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.RenderPipelines.Universal.Config.Runtime.csproj",
+        "projectName": "Unity.RenderPipelines.Universal.Config.Runtime",
+        "projectPath": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.RenderPipelines.Universal.Config.Runtime.csproj",
+        "packagesPath": "/Users/johnsonlai/.nuget/packages/",
+        "outputPath": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Temp/obj/Debug/Unity.RenderPipelines.Universal.Config.Runtime/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/johnsonlai/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.313/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Hands.Samples.Gestures.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Hands.Samples.Gestures.csproj",
+        "projectName": "Unity.XR.Hands.Samples.Gestures",
+        "projectPath": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Hands.Samples.Gestures.csproj",
+        "packagesPath": "/Users/johnsonlai/.nuget/packages/",
+        "outputPath": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Temp/obj/Debug/Unity.XR.Hands.Samples.Gestures/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/johnsonlai/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.313/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Hands.Samples.VisualizerSample.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Hands.Samples.VisualizerSample.csproj",
+        "projectName": "Unity.XR.Hands.Samples.VisualizerSample",
+        "projectPath": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Hands.Samples.VisualizerSample.csproj",
+        "packagesPath": "/Users/johnsonlai/.nuget/packages/",
+        "outputPath": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Temp/obj/Debug/Unity.XR.Hands.Samples.VisualizerSample/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/johnsonlai/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.313/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator.csproj",
+        "projectName": "Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator",
+        "projectPath": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator.csproj",
+        "packagesPath": "/Users/johnsonlai/.nuget/packages/",
+        "outputPath": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Temp/obj/Debug/Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/johnsonlai/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.313/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.csproj",
+        "projectName": "Unity.XR.Interaction.Toolkit.Samples.StarterAssets",
+        "projectPath": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.csproj",
+        "packagesPath": "/Users/johnsonlai/.nuget/packages/",
+        "outputPath": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Temp/obj/Debug/Unity.XR.Interaction.Toolkit.Samples.StarterAssets/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/johnsonlai/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.313/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.csproj",
+        "projectName": "Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor",
+        "projectPath": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.csproj",
+        "packagesPath": "/Users/johnsonlai/.nuget/packages/",
+        "outputPath": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Temp/obj/Debug/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/johnsonlai/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.313/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

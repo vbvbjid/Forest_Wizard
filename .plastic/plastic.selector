@@ -1,0 +1,3 @@
+repository "ForestWizard(URP)@johnson142c@cloud"
+  path "/"
+    smartbranch "/main/optimize"
