@@ -19,6 +19,8 @@ public class AudioManager : MonoBehaviour
     public GameManager GM;
     public bool Restart = false;
     public bool blockActive = false;
+    public double duration1;
+    public double duration2;
     void Start()
     {
         playbackMonitor = GetComponent<AudioPlaybackMonitor>();
@@ -29,6 +31,12 @@ public class AudioManager : MonoBehaviour
             AudioSource[] sources = audioObjects[i].GetComponents<AudioSource>();
             audioSource1.Add(sources[0]); // First audio source
             audioSource2.Add(sources[1]); // Second audio source
+            // Calculate a Clip’s exact duration
+            duration1 = (double)audioSource1[i].clip.samples / audioSource1[i].clip.frequency;
+            duration2 = (double)audioSource2[i].clip.samples / audioSource2[i].clip.frequency;
+
+            //Debug.Log(transform.parent.name + " duration1: " + duration1);
+            //Debug.Log(transform.parent.name + " duration2: " + duration2);
             currentState.Add(0); // Initial state is muted first audio source
         }
     }
@@ -44,9 +52,7 @@ public class AudioManager : MonoBehaviour
     }
     public void CheckDelay(double playTime)
     {
-        if(currentObjectIndex / 2 == playTime){
-
-        }
+        
     }
     // This function initializes the AudioManager (instead of Start)
     public void InitializeMusic()
@@ -59,7 +65,12 @@ public class AudioManager : MonoBehaviour
     {
         // Start looping through the game objects' audio in sequence
         musicStarted = true;
+        scheduleAudio();
         PlayNextAudio(); // Start with the first audio object
+    }
+    public void scheduleAudio()
+    {
+        audioSource1[currentObjectIndex].PlayScheduled(AudioSettings.dspTime);
     }
 
     void PlayNextAudio()

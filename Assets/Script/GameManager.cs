@@ -30,6 +30,9 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
+        AudioConfiguration config = AudioSettings.GetConfiguration();
+        config.sampleRate = 48000; // 設定為48000 Hz
+        AudioSettings.Reset(config);
         animalNumber = 3;
         StartCoroutine(InitializeSceneWithDelay(3.0f));
     }

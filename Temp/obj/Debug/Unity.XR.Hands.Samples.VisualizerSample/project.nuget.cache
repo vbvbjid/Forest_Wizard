@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uRXM48XJvRa8mRMpp/pDVTHDAAKOyVFoNFctIpbRFSP9rBL2zrWdSKHEpJRkLPmVqSUfexH5ViF66lxaHtuP2g==",
+  "dgSpecHash": "gv6/xMaPDbgIrEYwFD9gRuEhm8Vwk5Z5W6ZTFrbOtqN1Z4yYskd2u31ERAAPeFLLSDw7IrMHXEQV1+glHMtNrw==",
   "success": true,
-  "projectFilePath": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Hands.Samples.VisualizerSample.csproj",
+  "projectFilePath": "/Users/johnsonlai/Desktop/Forest_Wizard/Unity.XR.Hands.Samples.VisualizerSample.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

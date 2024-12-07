@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.csproj": {}
+    "/Users/johnsonlai/Desktop/Forest_Wizard/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.csproj": {}
   },
   "projects": {
-    "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.csproj": {
+    "/Users/johnsonlai/Desktop/Forest_Wizard/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.csproj",
+        "projectUniqueName": "/Users/johnsonlai/Desktop/Forest_Wizard/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.csproj",
         "projectName": "Unity.XR.Interaction.Toolkit.Samples.StarterAssets",
-        "projectPath": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.csproj",
+        "projectPath": "/Users/johnsonlai/Desktop/Forest_Wizard/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.csproj",
         "packagesPath": "/Users/johnsonlai/.nuget/packages/",
-        "outputPath": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Temp/obj/Debug/Unity.XR.Interaction.Toolkit.Samples.StarterAssets/",
+        "outputPath": "/Users/johnsonlai/Desktop/Forest_Wizard/Temp/obj/Debug/Unity.XR.Interaction.Toolkit.Samples.StarterAssets/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/johnsonlai/.nuget/NuGet/NuGet.Config"

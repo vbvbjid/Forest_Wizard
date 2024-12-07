@@ -136,11 +136,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Assembly-CSharp-Editor.csproj",
+      "projectUniqueName": "/Users/johnsonlai/Desktop/Forest_Wizard/Assembly-CSharp-Editor.csproj",
       "projectName": "Assembly-CSharp-Editor",
-      "projectPath": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Assembly-CSharp-Editor.csproj",
+      "projectPath": "/Users/johnsonlai/Desktop/Forest_Wizard/Assembly-CSharp-Editor.csproj",
       "packagesPath": "/Users/johnsonlai/.nuget/packages/",
-      "outputPath": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Temp/obj/Debug/Assembly-CSharp-Editor/",
+      "outputPath": "/Users/johnsonlai/Desktop/Forest_Wizard/Temp/obj/Debug/Assembly-CSharp-Editor/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/johnsonlai/.nuget/NuGet/NuGet.Config"
@@ -156,26 +156,26 @@
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
           "projectReferences": {
-            "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Assembly-CSharp.csproj": {
-              "projectPath": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Assembly-CSharp.csproj"
+            "/Users/johnsonlai/Desktop/Forest_Wizard/Assembly-CSharp.csproj": {
+              "projectPath": "/Users/johnsonlai/Desktop/Forest_Wizard/Assembly-CSharp.csproj"
             },
-            "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.RenderPipelines.Universal.Config.Runtime.csproj": {
-              "projectPath": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.RenderPipelines.Universal.Config.Runtime.csproj"
+            "/Users/johnsonlai/Desktop/Forest_Wizard/Unity.RenderPipelines.Universal.Config.Runtime.csproj": {
+              "projectPath": "/Users/johnsonlai/Desktop/Forest_Wizard/Unity.RenderPipelines.Universal.Config.Runtime.csproj"
             },
-            "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Hands.Samples.Gestures.csproj": {
-              "projectPath": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Hands.Samples.Gestures.csproj"
+            "/Users/johnsonlai/Desktop/Forest_Wizard/Unity.XR.Hands.Samples.Gestures.csproj": {
+              "projectPath": "/Users/johnsonlai/Desktop/Forest_Wizard/Unity.XR.Hands.Samples.Gestures.csproj"
             },
-            "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Hands.Samples.VisualizerSample.csproj": {
-              "projectPath": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Hands.Samples.VisualizerSample.csproj"
+            "/Users/johnsonlai/Desktop/Forest_Wizard/Unity.XR.Hands.Samples.VisualizerSample.csproj": {
+              "projectPath": "/Users/johnsonlai/Desktop/Forest_Wizard/Unity.XR.Hands.Samples.VisualizerSample.csproj"
             },
-            "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator.csproj": {
-              "projectPath": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator.csproj"
+            "/Users/johnsonlai/Desktop/Forest_Wizard/Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator.csproj": {
+              "projectPath": "/Users/johnsonlai/Desktop/Forest_Wizard/Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator.csproj"
             },
-            "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.csproj": {
-              "projectPath": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.csproj"
+            "/Users/johnsonlai/Desktop/Forest_Wizard/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.csproj": {
+              "projectPath": "/Users/johnsonlai/Desktop/Forest_Wizard/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.csproj"
             },
-            "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.csproj": {
-              "projectPath": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.csproj"
+            "/Users/johnsonlai/Desktop/Forest_Wizard/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.csproj": {
+              "projectPath": "/Users/johnsonlai/Desktop/Forest_Wizard/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.csproj"
             }
           }
         }

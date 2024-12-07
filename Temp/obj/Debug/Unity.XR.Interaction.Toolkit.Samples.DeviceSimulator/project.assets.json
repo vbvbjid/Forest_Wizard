@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator.csproj",
+      "projectUniqueName": "/Users/johnsonlai/Desktop/Forest_Wizard/Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator.csproj",
       "projectName": "Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator",
-      "projectPath": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator.csproj",
+      "projectPath": "/Users/johnsonlai/Desktop/Forest_Wizard/Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator.csproj",
       "packagesPath": "/Users/johnsonlai/.nuget/packages/",
-      "outputPath": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Temp/obj/Debug/Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator/",
+      "outputPath": "/Users/johnsonlai/Desktop/Forest_Wizard/Temp/obj/Debug/Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/johnsonlai/.nuget/NuGet/NuGet.Config"

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Hands.Samples.VisualizerSample.csproj",
+      "projectUniqueName": "/Users/johnsonlai/Desktop/Forest_Wizard/Unity.XR.Hands.Samples.VisualizerSample.csproj",
       "projectName": "Unity.XR.Hands.Samples.VisualizerSample",
-      "projectPath": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Unity.XR.Hands.Samples.VisualizerSample.csproj",
+      "projectPath": "/Users/johnsonlai/Desktop/Forest_Wizard/Unity.XR.Hands.Samples.VisualizerSample.csproj",
       "packagesPath": "/Users/johnsonlai/.nuget/packages/",
-      "outputPath": "/Users/johnsonlai/Desktop/VR_Project/ForestWizard(URP)/Temp/obj/Debug/Unity.XR.Hands.Samples.VisualizerSample/",
+      "outputPath": "/Users/johnsonlai/Desktop/Forest_Wizard/Temp/obj/Debug/Unity.XR.Hands.Samples.VisualizerSample/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/johnsonlai/.nuget/NuGet/NuGet.Config"

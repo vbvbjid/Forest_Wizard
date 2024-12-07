@@ -1090,7 +1090,7 @@ PlayerSettings:
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
   projectName: ForestWizard(URP)
-  organizationId: johnson142c
+  organizationId: forest-wizard
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}

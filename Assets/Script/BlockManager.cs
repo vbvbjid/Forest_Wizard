@@ -131,7 +131,7 @@ public class BlockManager : MonoBehaviour
                 {
                     anim.SetBool("show", true);
                     anim.SetInteger("code", foxCode);
-                    anim.Play("Fox_Sit3_StandUp");
+                    //anim.Play("Fox_Sit3_StandUp");
                     anim.Play(foxCode.ToString());
                     foxCode++;
                 }
