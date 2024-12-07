@@ -13,6 +13,8 @@ TagManager:
   - OriginSoundObject
   - WindDirected
   - Flower
+  - SamplesInfoPanel
+  - hand
   layers:
   - Default
   - TransparentFX
