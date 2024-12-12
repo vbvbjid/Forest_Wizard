@@ -65,10 +65,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/SharedAssets/Scripts/Runtime/LoadingBar.cs" />
+    <Compile Include="Assets/Samples/Universal RP/14.0.11/URP Package Samples/CameraStacking/3D Skybox/Scripts/SkyboxCamera.cs" />
     <Compile Include="Assets/Script/CameraFollow.cs" />
     <Compile Include="Assets/SharedAssets/Benchmark/FrameData.cs" />
     <Compile Include="Assets/SharedAssets/Benchmark/PerformanceTestStage.cs" />
     <Compile Include="Assets/Script/Animal.cs" />
+    <Compile Include="Assets/new script/BGM.cs" />
     <Compile Include="Assets/SharedAssets/Scripts/Runtime/SceneMetaData.cs" />
     <Compile Include="Assets/Script/SelfDirectionDetector.cs" />
     <Compile Include="Assets/Script/Method/Clock.cs" />
@@ -84,6 +86,7 @@
     <Compile Include="Assets/SharedAssets/FirstPersonController/Mobile/Scripts/VirtualInputs/UIVirtualTouchZone.cs" />
     <Compile Include="Assets/SharedAssets/Scripts/Runtime/FPSCounter.cs" />
     <Compile Include="Assets/SharedAssets/Scripts/Runtime/PlayerManager.cs" />
+    <Compile Include="Assets/Samples/Universal RP/14.0.11/URP Package Samples/RendererFeatures/DistortTunnel/DistortTunnelPass_Tunnel.cs" />
     <Compile Include="Assets/SharedAssets/FirstPersonController/Mobile/Scripts/VirtualInputs/UIVirtualJoystick.cs" />
     <Compile Include="Assets/SharedAssets/Benchmark/PerformanceTestUtilities.cs" />
     <Compile Include="Assets/SharedAssets/FirstPersonController/Mobile/Scripts/VirtualInputs/UIVirtualButton.cs" />
@@ -91,13 +94,20 @@
     <Compile Include="Assets/SharedAssets/FirstPersonController/InputSystem/FirstPersonInputs.cs" />
     <Compile Include="Assets/Script/GameManager.cs" />
     <Compile Include="Assets/Script/AudioManager.cs" />
+    <Compile Include="Assets/Samples/Universal RP/14.0.11/URP Package Samples/SharedAssets/Scripts/FirstPersonController.cs" />
     <Compile Include="Assets/SharedAssets/FirstPersonController/Mobile/Scripts/Utilities/MobileDisableAutoSwitchControls.cs" />
+    <Compile Include="Assets/Samples/Universal RP/14.0.11/URP Package Samples/RendererFeatures/DistortTunnel/DistortTunnelRendererFeature.cs" />
     <Compile Include="Assets/Script/AudioPlaybackMonitor.cs" />
     <Compile Include="Assets/SharedAssets/Scripts/Runtime/AsyncShaderCompilationForCamera.cs" />
+    <Compile Include="Assets/Samples/Universal RP/14.0.11/URP Package Samples/RendererFeatures/DistortTunnel/DistortTunnelPass_CopyColor.cs" />
+    <Compile Include="Assets/cameraColor.cs" />
+    <Compile Include="Assets/Samples/Universal RP/14.0.11/URP Package Samples/SharedAssets/Scripts/AutoLoadPipelineAsset.cs" />
+    <Compile Include="Assets/Samples/Universal RP/14.0.11/URP Package Samples/RendererFeatures/DepthBlit/DepthBlitEdgePass.cs" />
     <Compile Include="Assets/Script/spaceCollider.cs" />
     <Compile Include="Assets/Script/buffer_AM.cs" />
     <Compile Include="Assets/SharedAssets/Scripts/Runtime/GlobalVolumeFeature.cs" />
     <Compile Include="Assets/SharedAssets/Scripts/Runtime/FullscreenEffect.cs" />
+    <Compile Include="Assets/Samples/Universal RP/14.0.11/URP Package Samples/LensFlares/Scripts/ScreenSpacePlacement.cs" />
     <Compile Include="Assets/Animal Asset/Quirky Series Ultimate/_Scripts/QuirkySeriesDemo.cs" />
     <Compile Include="Assets/SharedAssets/Scripts/Runtime/ScreenController.cs" />
     <Compile Include="Assets/Script/Method/AudioMethod.cs" />
@@ -108,9 +118,12 @@
     <Compile Include="Assets/SharedAssets/Scripts/Runtime/MediaSceneLoader.cs" />
     <Compile Include="Assets/SharedAssets/Scripts/Runtime/SceneTransitionManager.cs" />
     <Compile Include="Assets/Script/PlayerController.cs" />
+    <Compile Include="Assets/Samples/Universal RP/14.0.11/URP Package Samples/RendererFeatures/DistortTunnel/DistortTunnelPass_Distort.cs" />
     <Compile Include="Assets/SharedAssets/FirstPersonController/Mobile/Scripts/CanvasInputs/UICanvasControllerInput.cs" />
+    <Compile Include="Assets/GM.cs" />
     <Compile Include="Assets/SharedAssets/Scripts/Runtime/FullscreenTransition.cs" />
     <Compile Include="Assets/Script/HandRotationController.cs" />
+    <Compile Include="Assets/Samples/Universal RP/14.0.11/URP Package Samples/RendererFeatures/DepthBlit/DepthBlitFeature.cs" />
     <Compile Include="Assets/SharedAssets/Scripts/Runtime/DeviceTypeUI.cs" />
     <Compile Include="Assets/SharedAssets/Benchmark/PerformanceTest.cs" />
     <Compile Include="Assets/SharedAssets/Scripts/Runtime/MemoryCounter.cs" />
@@ -119,7 +132,11 @@
     <Compile Include="Assets/TheLazzyKnight/Stylized Environment VFX/Scripts/WindDirector.cs" />
     <Compile Include="Assets/Script/AudioBlocksManager.cs" />
     <Compile Include="Assets/Script/ButtonTest.cs" />
+    <Compile Include="Assets/Samples/Universal RP/14.0.11/URP Package Samples/RendererFeatures/BlitToRTHandle/BlitToRTHandlePass.cs" />
+    <Compile Include="Assets/Trigger.cs" />
     <Compile Include="Assets/Script/Method/utilities.cs" />
+    <Compile Include="Assets/Samples/Universal RP/14.0.11/URP Package Samples/RendererFeatures/BlitToRTHandle/BlitToRTHandleRendererFeature.cs" />
+    <Compile Include="Assets/Samples/Universal RP/14.0.11/URP Package Samples/RendererFeatures/KeepFrame/KeepFrameFeature.cs" />
     <Compile Include="Assets/Script/CameraFadeController.cs" />
     <Compile Include="Assets/Script/Method/ShaderMethod.cs" />
   </ItemGroup>
@@ -150,6 +167,7 @@
     <None Include="Assets/SharedAssets/TextMeshPro/Shaders/TMPro_Properties.cginc" />
     <None Include="Assets/SharedAssets/TextMeshPro/Shaders/TMPro_Surface.cginc" />
     <None Include="Assets/SharedAssets/TextMeshPro/Shaders/TMP_SDF Overlay.shader" />
+    <None Include="Assets/Samples/Universal RP/14.0.11/URP Package Samples/SharedAssets/Shaders/3DText.shader" />
     <None Include="Assets/SharedAssets/TextMeshPro/Resources/LineBreaking_Following_Characters.txt" />
     <None Include="Assets/SharedAssets/TextMeshPro/Fonts/LiberationSans - OFL.txt" />
     <None Include="Assets/SharedAssets/Shaders/HLSL/StencilOnly.shader" />
