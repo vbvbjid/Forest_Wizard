@@ -1,11 +1,13 @@
 using UnityEngine;
 using System.Collections;
+using Unity.EditorCoroutines.Editor;
 public class Animal : MonoBehaviour
 {
     public Animator animator;
     public int AnimalCode;
     public AudioSource audioSource;
     public BlockManager blockManager;
+    public bool BGMscheduled = false;
     public newAM newAM;
     public void Start()
     {
@@ -31,8 +33,8 @@ public class Animal : MonoBehaviour
     private IEnumerator ShoutCoroutine()
     {
         // Restart animation
-        animator.SetTrigger("Sing");
-        animator.SetBool("isSinging", true);
+        //animator.SetTrigger("Sing");
+        //animator.SetBool("isSinging", true);
         // Start audio
         AudioMethod.Instance.PlayAudio(audioSource);
 
@@ -44,18 +46,36 @@ public class Animal : MonoBehaviour
             GameManager.Instance.ActivedAnimal[AnimalCode] = true;
             if (AnimalCode < 4)
             {
-                StartAnimation(); // Assuming this involves UI or another Unity-specific call
+                //StartAnimation(); // Assuming this involves UI or another Unity-specific call
             }
         }
+    }
+    public IEnumerator EnableBlock(float duration)
+    {
+        yield return new WaitForSeconds(duration);
+        newAM.blockActive = true;
     }
     private void OnCollisionEnter(Collision collision)
     {
         //ensure activeated
-        if (AnimalCode != GameManager.Instance.currentAnimal && GameManager.Instance.currentAnimal <= 3) return;
+        //if (AnimalCode != GameManager.Instance.currentAnimal && GameManager.Instance.currentAnimal <= 3) return;
         //check collision object
-        if (!collision.gameObject.CompareTag("hand")) return;
+        if (!collision.gameObject.CompareTag("Wand")) return;
         // Play audio and animation
-        //StartCoroutine(ShoutCoroutine());
-        newAM.musicStart = true;
+        StartCoroutine(ShoutCoroutine());
+        double startTime;
+        //GameManager.Instance.ShowBlocks(GameManager.Instance.currentAnimal);
+        if (!BGMscheduled)
+        {
+            BGMscheduled = true;
+            startTime = AudioSettings.dspTime + 3.0f;
+            GameManager.Instance.BGM.PlayScheduled(startTime);
+            GameManager.Instance.Drum.PlayScheduled(startTime);
+            GameManager.Instance.Base.PlayScheduled(startTime);
+            Debug.Log("BGM: " + startTime);
+            newAM.nextStartTime = startTime;
+            StartCoroutine(EnableBlock((float)(startTime - AudioSettings.dspTime + 1)));
+            newAM.musicStart = true;
+        }
     }
 }

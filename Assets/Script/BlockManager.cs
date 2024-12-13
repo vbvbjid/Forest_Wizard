@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.EditorCoroutines.Editor;
 using UnityEngine;
 
 public class BlockManager : MonoBehaviour
@@ -86,6 +87,17 @@ public class BlockManager : MonoBehaviour
             default: break; // Handle invalid indices
         }
     }
+    public IEnumerator ScheduleEmit(int index, float time)
+    {
+        Debug.Log("wait" + time);
+        yield return new WaitForSeconds(time);
+        Renderer renderer = materialGameObjects[index].GetComponent<Renderer>();
+        renderer.material.EnableKeyword("_EMISSION");
+        Color finalEmissionColor = emissionColor * emissionIntensity;
+        renderer.material.SetColor("_EmissionColor", finalEmissionColor);
+        yield return new WaitForSeconds(2.0f);
+        renderer.material.SetColor("_EmissionColor", Color.black);
+    }
 
     // Function to enable or disable the emission of a material
     public void SetMaterialEmission(int index, float duration)
@@ -112,7 +124,7 @@ public class BlockManager : MonoBehaviour
     }
     public IEnumerator PlayAnimationsAndShowBlocks(int currentAnimal)
     {
-        switch (currentAnimal)
+        /*switch (currentAnimal)
         {
             case 0:
                 int birdCode = 0;
@@ -138,10 +150,10 @@ public class BlockManager : MonoBehaviour
                 break;
             default:
                 break;
-        }
+        }*/
         yield return new WaitForSeconds(1);
         // Now show blocks
-        GameManager.Instance.ShowBlocks(GameManager.Instance.currentAnimal);
+
     }
     public void ReturnAnimation()
     {
@@ -176,7 +188,7 @@ public class BlockManager : MonoBehaviour
         float bounceSpeed = 2.0f;
 
         // Trigger the bounce animation if applicable
-        PlayBounceAnimation(index);
+        //PlayBounceAnimation(index);
 
         // Handle the thrush interaction logic
         if (Blocks[index] == false)
@@ -185,9 +197,9 @@ public class BlockManager : MonoBehaviour
             if (--InteractedBlock <= 0)
             {
 
-                yield return new WaitForSeconds(15.0f);
+                //yield return new WaitForSeconds(15.0f);
                 //SetAllBlockColor(Color.white);
-                ReturnAnimation();
+                //ReturnAnimation();
                 yield return new WaitForSeconds(3.0f);
                 GameManager.Instance.SwitchScene();
                 StopCoroutine(emitCoroutine);

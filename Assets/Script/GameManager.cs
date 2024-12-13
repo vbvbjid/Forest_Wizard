@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Threading.Tasks;
+using Meta.Voice.Audio;
 
 public class GameManager : MonoBehaviour
 {
@@ -9,9 +10,12 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
     public GameObject[] lights;
     public AudioManager[] AudioManagers;
+    public newAM[] newAM;
     public GameObject[] AnimalBlocks;
     public int currentAnimal = 0;
     public AudioSource BGM;
+    public AudioSource Base;
+    public AudioSource Drum;
     public BlockManager[] TextureManagers;
     public int animalNumber = 3;
     public bool[] ActivedAnimal = new bool[4] { false, false, false, false };
@@ -30,11 +34,8 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
-        AudioConfiguration config = AudioSettings.GetConfiguration();
-        config.sampleRate = 48000; // 設定為48000 Hz
-        AudioSettings.Reset(config);
         animalNumber = 3;
-        StartCoroutine(InitializeSceneWithDelay(3.0f));
+        //StartCoroutine(InitializeSceneWithDelay(3.0f));
     }
     void Update()
     {
@@ -60,7 +61,7 @@ public class GameManager : MonoBehaviour
 
     public void SwitchScene()
     {
-        AudioManagers[currentAnimal].ResetAudioManager(false);
+        newAM[currentAnimal].ResetAudioManager(false);
         //TextureManagers[currentAnimal].enabled = false;
         if (BGM.isPlaying) FadeOutAudio(BGM);
         //lights[currentAnimal].SetActive(false);
@@ -84,27 +85,26 @@ public class GameManager : MonoBehaviour
             // Activate light and block, and initialize audio manager without background tasks
             lights[i].SetActive(true);
             AnimalBlocks[i].SetActive(true);
-            StartCoroutine(TextureManagers[i].PlayAnimationsAndShowBlocks(i));
-            AudioManagers[i].enabled = true;
-
-            foreach (Animator animator in TextureManagers[0].animator)
-            {
-                animator.SetBool("fly", true);
-            }
-
+            //StartCoroutine(TextureManagers[i].PlayAnimationsAndShowBlocks(i));
+            newAM[i].enabled = true;
         }
-        for (int i = 0; i < AudioManagers.Length; i++)
+        double startTime = AudioSettings.dspTime + 2.0f;
+        for (int i = 0; i < newAM.Length; i++)
         {
-            AudioManagers[i].Restart = true;
+            newAM[i].nextStartTime = startTime;
+            newAM[i].musicStart = true;
+            newAM[i].blockActive = true;
         }
-        BGM.PlayScheduled(AudioSettings.dspTime);
+        BGM.PlayScheduled(startTime);
+        Base.PlayScheduled(startTime);
+        Drum.PlayScheduled(startTime);
     }
     public void ShowBlocks(int currentAnimal)
     {
         if (currentAnimal > animalNumber) return;
         AudioManagers[currentAnimal].blockActive = true;
         AnimalBlocks[currentAnimal].SetActive(true);
-        AudioManagers[currentAnimal].InitializeMusic();
+        //AudioManagers[currentAnimal].InitializeMusic();
         if (!BGM.isPlaying)
             BGM.PlayScheduled(AudioSettings.dspTime);
         AudioManagers[currentAnimal].StartMusic();
@@ -120,15 +120,17 @@ public class GameManager : MonoBehaviour
     private IEnumerator FadeOutAudioSource(AudioSource audioSource, float duration)
     {
         // Get the initial volume
-        float startVolume = audioSource.volume;
-
-        // Gradually decrease the volume
-        for (float t = 0; t < duration; t += Time.deltaTime)
+        if (audioSource.isPlaying)
         {
-            audioSource.volume = Mathf.Lerp(startVolume, 0, t / duration);
-            yield return null;
-        }
+            float startVolume = audioSource.volume;
 
+            // Gradually decrease the volume
+            for (float t = 0; t < duration; t += Time.deltaTime)
+            {
+                audioSource.volume = Mathf.Lerp(startVolume, 0, t / duration);
+                yield return null;
+            }
+        }
         // Set the final volume to 0 and stop the audio
         audioSource.Stop();
         audioSource.volume = 1;

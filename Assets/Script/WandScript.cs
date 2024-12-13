@@ -8,8 +8,7 @@ public class WandScript : MonoBehaviour
 {
     public newAM[] newAM;
     public Collider selfCollider;
-    public float disableDuration = 2;
-    private float collisionCooldown = 0.1f;
+    private float collisionCooldown = 1.0f;
     private float lastCollisionTime;
 
 
@@ -42,7 +41,7 @@ public class WandScript : MonoBehaviour
                 };
 
                 // Assuming `code` is the result of looking up the string from `stringToEnum`
-                if (stringToEnum.TryGetValue(parent.name, out int code))
+                if (stringToEnum.TryGetValue(parent.name, out int code) && newAM[code].blockActive)
                 {
                     newAM[code].SwitchAudioState(blockNumber);
                     /*switch (code)
@@ -70,24 +69,13 @@ public class WandScript : MonoBehaviour
                 }
                 else
                 {
-                    Debug.LogError("Invalid animal name");
+                    Debug.LogError("Invalid animal name: " + parent.name );
                 }
-                //StartCoroutine(DisableColliderTemporarily());
             }
             // Handle collision
-            //lastCollisionTime = Time.time;
+            lastCollisionTime = Time.time;
         }
 
     }
-    private IEnumerator DisableColliderTemporarily()
-    {
-        // Disable the collider
-        selfCollider.enabled = false;
 
-        // Wait for the specified duration
-        yield return new WaitForSeconds(disableDuration);
-
-        // Re-enable the collider
-        selfCollider.enabled = true;
-    }
 }
