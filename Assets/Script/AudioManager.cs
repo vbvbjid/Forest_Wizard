@@ -9,6 +9,7 @@ public class AudioManager : MonoBehaviour
 
     public List<AudioSource> audioSource1 = new List<AudioSource>();
     public List<AudioSource> audioSource2 = new List<AudioSource>();
+    public AudioSource audioSource;
     public List<int> currentState = new List<int>(new int[4]);
     //public List<int> stateChangeQueued = new List<int>();
 
@@ -65,12 +66,7 @@ public class AudioManager : MonoBehaviour
     {
         // Start looping through the game objects' audio in sequence
         musicStarted = true;
-        scheduleAudio();
         PlayNextAudio(); // Start with the first audio object
-    }
-    public void scheduleAudio()
-    {
-        audioSource1[currentObjectIndex].PlayScheduled(AudioSettings.dspTime);
     }
 
     void PlayNextAudio()

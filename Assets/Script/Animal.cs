@@ -6,6 +6,7 @@ public class Animal : MonoBehaviour
     public int AnimalCode;
     public AudioSource audioSource;
     public BlockManager blockManager;
+    public newAM newAM;
     public void Start()
     {
         audioSource = gameObject.GetComponent<AudioSource>();
@@ -52,8 +53,9 @@ public class Animal : MonoBehaviour
         //ensure activeated
         if (AnimalCode != GameManager.Instance.currentAnimal && GameManager.Instance.currentAnimal <= 3) return;
         //check collision object
-        if (!collision.gameObject.CompareTag("Wand")) return;
+        if (!collision.gameObject.CompareTag("hand")) return;
         // Play audio and animation
-        StartCoroutine(ShoutCoroutine());
+        //StartCoroutine(ShoutCoroutine());
+        newAM.musicStart = true;
     }
 }

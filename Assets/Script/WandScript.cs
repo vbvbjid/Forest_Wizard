@@ -6,14 +6,7 @@ using UnityEngine.UIElements;
 
 public class WandScript : MonoBehaviour
 {
-    public AudioManager Fox;
-    public AudioManager Thrush;
-    public AudioManager Boar;
-    public AudioManager Buck;
-    public AudioManager Squirrel;
-    public AudioManager Raccoon;
-    public AudioManager Grasshopper;
-    public AudioManager Dove;
+    public newAM[] newAM;
     public Collider selfCollider;
     public float disableDuration = 2;
     private float collisionCooldown = 0.1f;
@@ -42,20 +35,17 @@ public class WandScript : MonoBehaviour
                 GameObject parent = collision.transform.parent.gameObject;
                 Dictionary<string, int> stringToEnum = new Dictionary<string, int>()
                 {
-                    { "fox", 0 },
-                    { "Boar", 1 },
+                    { "thrush", 0 },
+                    { "fox", 1 },
                     { "Squirrel&Cricket", 2 },
-                    { "Raccoon", 3 },
-                    { "thrush", 4 },
-                    { "grasshopper", 5 },
-                    { "Dove", 6 },
-                    { "Buck", 7 }
+                    { "Buck", 3 }
                 };
 
                 // Assuming `code` is the result of looking up the string from `stringToEnum`
                 if (stringToEnum.TryGetValue(parent.name, out int code))
                 {
-                    switch (code)
+                    newAM[code].SwitchAudioState(blockNumber);
+                    /*switch (code)
                     {
                         case 0:
                             if (Fox.blockActive)
@@ -73,37 +63,19 @@ public class WandScript : MonoBehaviour
                             if (Raccoon.blockActive)
                                 Raccoon.SwitchAudioState(blockNumber);
                             break;
-                        case 4:
-                            if (Thrush.blockActive)
-                            {
-                                Thrush.SwitchAudioState(blockNumber);
-                            }
-                            break;
-                        case 5:
-                            if (Grasshopper.blockActive)
-                                Grasshopper.SwitchAudioState(blockNumber);
-                            break;
-                        case 6:
-                            if (Dove.blockActive)
-                                Dove.SwitchAudioState(blockNumber);
-                            break;
-                        case 7:
-                            if (Buck.blockActive)
-                                Buck.SwitchAudioState(blockNumber);
-                            break;
                         default:
                             Debug.LogError("Unknown animal");
                             break;
-                    }
+                    }*/
                 }
                 else
                 {
                     Debug.LogError("Invalid animal name");
                 }
-                StartCoroutine(DisableColliderTemporarily());
+                //StartCoroutine(DisableColliderTemporarily());
             }
             // Handle collision
-            lastCollisionTime = Time.time;
+            //lastCollisionTime = Time.time;
         }
 
     }
