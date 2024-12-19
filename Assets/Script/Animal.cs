@@ -75,7 +75,7 @@ public class Animal : MonoBehaviour
             GameManager.Instance.Base.PlayScheduled(startTime);
             Debug.Log("BGM: " + startTime);
             newAM.nextStartTime = startTime;
-            if (AnimalCode == 1)
+            if (AnimalCode == 1 || AnimalCode == 0)
             {
                 Debug.Log("Bloom");
                 blockManager.ShowBlock();

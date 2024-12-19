@@ -12,6 +12,7 @@ public class BlockManager : MonoBehaviour
     public Color emissionColor = Color.white;
     public float emissionIntensity = 0.1f;
     public Animator[] animator = new Animator[4] { null, null, null, null };
+    public Animal[] animal;
     private bool[] Blocks = new bool[4] { false, false, false, false };
     private int InteractedBlock = 4;
     private Coroutine emitCoroutine;
@@ -28,7 +29,21 @@ public class BlockManager : MonoBehaviour
         foreach (var block in materialGameObjects)
         {
             // Get the Renderer component of the block
-            Renderer renderer = block.GetComponent<Renderer>();
+            Renderer renderer;
+            if (transform.name == "thrush")
+            {
+                Transform child = block.transform.GetChild(0);
+                renderer = child.GetComponent<Renderer>();
+            }
+            else
+            {
+                renderer = block.GetComponent<Renderer>();
+            }
+            if (renderer == null)
+            {
+                Transform child = block.transform.GetChild(0);
+                renderer = child.GetComponent<Renderer>();
+            }
 
             // Check if the renderer exists
             if (renderer != null)
@@ -50,39 +65,33 @@ public class BlockManager : MonoBehaviour
             yield return new WaitForSeconds(1.0f);
         }
         // Get the Renderer component of the object at the given BlockIndex
-        Renderer renderer = materialGameObjects[BlockIndex].GetComponent<Renderer>();
-        int animalCode = 0;
-        if (gameObject.name == "thrush")
+        Renderer renderer;
+        if (transform.name == "thrush")
         {
-            animalCode = 0;
+            Transform child = materialGameObjects[BlockIndex].transform.GetChild(0);
+            renderer = child.GetComponent<Renderer>();
         }
-        else if (gameObject.name == "thrush")
+        else
         {
-            animalCode = 1;
-        }
-        else if (gameObject.name == "Squirrel&Cricket")
-        {
-            animalCode = 2;
-        }
-        else if (gameObject.name == "Buck")
-        {
-            animalCode = 3;
+            renderer = materialGameObjects[BlockIndex].GetComponent<Renderer>();
         }
         switch (StateIndex)
         {
             //State 0: gray out
             case 0:
-                animator[animalCode].SetTrigger("1");
-                    renderer.material.color = Color.gray;
+                foreach(var animal in animal)
+                    animal.animator.SetTrigger("1");
+                renderer.material.color = Color.gray;
                 break;
             //State 1: switch the first accessory
             case 1:
-                animator[animalCode].SetTrigger("2");
-                    renderer.material.color = Color.red;
+                foreach(var animal in animal)
+                    animal.animator.SetTrigger("2");
+                renderer.material.color = Color.red;
                 break;
             //State 1: switcht to the second accessory
             case 2:
-                    renderer.material.color = Color.blue;
+                renderer.material.color = Color.blue;
                 break;
             default: break; // Handle invalid indices
         }
@@ -91,7 +100,15 @@ public class BlockManager : MonoBehaviour
     {
         Debug.Log("wait" + time);
         yield return new WaitForSeconds(time);
-        Renderer renderer = materialGameObjects[index].GetComponent<Renderer>();
+        Renderer renderer;
+        if (transform.name == "thrush")
+        {
+            Transform child = materialGameObjects[index].transform.GetChild(0);
+            renderer = child.GetComponent<Renderer>();
+        }
+        else{
+            renderer = materialGameObjects[index].GetComponent<Renderer>();
+        }
         renderer.material.EnableKeyword("_EMISSION");
         Color finalEmissionColor = emissionColor * emissionIntensity;
         renderer.material.SetColor("_EmissionColor", finalEmissionColor);
@@ -102,7 +119,15 @@ public class BlockManager : MonoBehaviour
     // Function to enable or disable the emission of a material
     public void SetMaterialEmission(int index, float duration)
     {
-        Renderer renderer = materialGameObjects[index].GetComponent<Renderer>();
+        Renderer renderer;
+        if (transform.name == "thrush")
+        {
+            Transform child = materialGameObjects[index].transform.GetChild(0);
+            renderer = child.GetComponent<Renderer>();
+        }
+        else{
+            renderer = materialGameObjects[index].GetComponent<Renderer>();
+        }
         emitCoroutine = StartCoroutine(EmitForFixedTime(renderer, duration, index));  // Start the emission for a fixed time
     }
     void SwitchAnimation(int index)
@@ -118,7 +143,7 @@ public class BlockManager : MonoBehaviour
         {
             foreach (Animator anim in animator)
             {
-                anim.SetTrigger("Show");
+                anim.SetBool("Show", true);
             }
         }
     }

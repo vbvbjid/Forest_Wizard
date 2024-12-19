@@ -7,6 +7,7 @@ using Meta.Voice.Audio;
 public class GameManager : MonoBehaviour
 {
     // Singleton Instance
+    public GameObject[] SM;
     public static GameManager Instance { get; private set; }
     public GameObject[] lights;
     public AudioManager[] AudioManagers;
@@ -94,6 +95,9 @@ public class GameManager : MonoBehaviour
             newAM[i].nextStartTime = startTime;
             newAM[i].musicStart = true;
             newAM[i].blockActive = true;
+        }
+        foreach(var item in SM){
+            item.SetActive(true);
         }
         BGM.PlayScheduled(startTime);
         Base.PlayScheduled(startTime);
