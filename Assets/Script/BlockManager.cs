@@ -45,20 +45,27 @@ public class BlockManager : MonoBehaviour
     public IEnumerator ChangeState(int BlockIndex, int StateIndex)
     {
         SwitchAnimation(BlockIndex);
-        yield return new WaitForSeconds(1.0f);
+        if (gameObject.name == "fox")
+        {
+            yield return new WaitForSeconds(1.0f);
+        }
         // Get the Renderer component of the object at the given BlockIndex
         Renderer renderer = materialGameObjects[BlockIndex].GetComponent<Renderer>();
         int animalCode = 0;
-        if(gameObject.name == "thrush"){
+        if (gameObject.name == "thrush")
+        {
             animalCode = 0;
         }
-        else if(gameObject.name == "thrush"){
+        else if (gameObject.name == "thrush")
+        {
             animalCode = 1;
         }
-        else if(gameObject.name == "Squirrel&Cricket"){
+        else if (gameObject.name == "Squirrel&Cricket")
+        {
             animalCode = 2;
         }
-        else if(gameObject.name == "Buck"){
+        else if (gameObject.name == "Buck")
+        {
             animalCode = 3;
         }
         switch (StateIndex)

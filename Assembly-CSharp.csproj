@@ -125,6 +125,7 @@
     <Compile Include="Assets/SharedAssets/Scripts/Runtime/FullscreenTransition.cs" />
     <Compile Include="Assets/Script/HandRotationController.cs" />
     <Compile Include="Assets/Samples/Universal RP/14.0.11/URP Package Samples/RendererFeatures/DepthBlit/DepthBlitFeature.cs" />
+    <Compile Include="Assets/SM.cs" />
     <Compile Include="Assets/SharedAssets/Scripts/Runtime/DeviceTypeUI.cs" />
     <Compile Include="Assets/SharedAssets/Benchmark/PerformanceTest.cs" />
     <Compile Include="Assets/SharedAssets/Scripts/Runtime/MemoryCounter.cs" />

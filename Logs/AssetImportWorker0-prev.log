@@ -1,30 +1,23 @@
-Unity Editor version:    2022.3.50f1 (c3db7f8bf9b1)
-Branch:                  2022.3/staging
-Build type:              Release
-Batch mode:              YES
-macOS version:           Version 15.1.1 (Build 24B91)
-Darwin version:          24.1.0
-Architecture:            arm64
-Running under Rosetta:   NO
-Available memory:        24576 MB
 Using pre-set license
-Pro License: YES
+Built from '2022.3/staging' branch; Version is '2022.3.50f1 (c3db7f8bf9b1) revision 12835711'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Enterprise' Language: 'zh' Physical Memory: 65301 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-/Applications/Unity/Hub/Editor/2022.3.50f1/Unity.app/Contents/MacOS/Unity
+C:\Program Files\Unity\Hub\Editor\2022.3.50f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-/Users/johnsonlai/Desktop/Forest_Wizard
+C:/Users/user/Desktop/Forest_Wizard
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60153
-Successfully changed project path to: /Users/johnsonlai/Desktop/Forest_Wizard
-/Users/johnsonlai/Desktop/Forest_Wizard
+51103
+Successfully changed project path to: C:/Users/user/Desktop/Forest_Wizard
+C:/Users/user/Desktop/Forest_Wizard
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -56,84 +49,76 @@ Successfully changed project path to: /Users/johnsonlai/Desktop/Forest_Wizard
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [8591996992]  Target information:
+Player connection [4228]  Target information:
 
-Player connection [8591996992]  * "[IP] 192.168.0.220 [Port] 0 [Flags] 2 [Guid] 2127866542 [EditorId] 2127866542 [Version] 1048832 [Id] OSXEditor(0,MacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+Player connection [4228]  * "[IP] 192.168.0.122 [Port] 0 [Flags] 2 [Guid] 2036494213 [EditorId] 2036494213 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-KDKLKEP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [8591996992] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [8591996992] Host joined alternative multi-casting on [225.0.0.222:34997]...
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-Refreshing native plugins compatible for Editor in 30.46 ms, found 11 plugins.
-Preloading 2 native plugins for Editor in 9.36 ms.
+Player connection [4228] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [4228] Host joined alternative multi-casting on [225.0.0.222:34997]...
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+Refreshing native plugins compatible for Editor in 20.93 ms, found 16 plugins.
+Preloading 3 native plugins for Editor in 2.03 ms.
 Initialize engine version: 2022.3.50f1 (c3db7f8bf9b1)
-[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2022.3.50f1/Unity.app/Contents/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path /Users/johnsonlai/Desktop/Forest_Wizard/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.50f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/user/Desktop/Forest_Wizard/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
- preferred device: Apple M2 (high power)
-Metal devices available: 1
-0: Apple M2 (high power)
-Using device Apple M2 (high power)
-Initializing Metal device caps: Apple M2
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3070 Ti (ID=0x2482)
+    Vendor:   NVIDIA
+    VRAM:     8017 MB
+    Driver:   32.0.15.6094
 Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
 Initialize mono
-Mono path[0] = '/Applications/Unity/Hub/Editor/2022.3.50f1/Unity.app/Contents/Managed'
-Mono path[1] = '/Applications/Unity/Hub/Editor/2022.3.50f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
-Mono config path = '/Applications/Unity/Hub/Editor/2022.3.50f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56680
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.50f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.50f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.50f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56136
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: /Applications/Unity/Hub/Editor/2022.3.50f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Register platform support module: /Applications/Unity/Hub/Editor/2022.3.50f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Register platform support module: /Applications/Unity/Hub/Editor/2022.3.50f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
-Register platform support module: /Applications/Unity/Hub/Editor/2022.3.50f1/PlaybackEngines/VisionOSPlayer/UnityEditor.VisionOS.Extensions.dll
-Register platform support module: /Applications/Unity/Hub/Editor/2022.3.50f1/PlaybackEngines/AppleTVSupport/UnityEditor.AppleTV.Extensions.dll
-Registered in 0.008198 seconds.
-- Loaded All Assemblies, in  0.353 seconds
-[usbmuxd] Start listen thread
-[usbmuxd] Listen thread started
-[usbmuxd] Send listen message
-Native extension for AppleTV target not found
-objc[81680]: Class XcodeScriptingDelegate is implemented in both /Applications/Unity/Hub/Editor/2022.3.50f1/PlaybackEngines/AppleTVSupport/arm64/UnityEditor.iOS.Native.dylib (0x3488145d8) and /Applications/Unity/Hub/Editor/2022.3.50f1/PlaybackEngines/VisionOSPlayer/arm64/UnityEditor.VisionOS.Native.dylib (0x3489545d8). One of the two will be used. Which one is undefined.
-[usbmuxd] Start listen thread
-[usbmuxd] Listen thread started
-[usbmuxd] Send listen message
-Native extension for VisionOS target not found
-Native extension for iOS target not found
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.50f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.50f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.50f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.50f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+Registered in 0.011359 seconds.
+- Loaded All Assemblies, in  0.327 seconds
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 253 ms
-Native extension for OSXStandalone target not found
+Android Extension - Scanning For ADB Devices 196 ms
+Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.630 seconds
-Domain Reload Profiling: 983ms
-	BeginReloadAssembly (100ms)
+- Finished resetting the current domain, in  0.455 seconds
+Domain Reload Profiling: 781ms
+	BeginReloadAssembly (85ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (0ms)
-	RebuildCommonClasses (33ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (51ms)
-	LoadAllAssembliesAndSetupDomain (159ms)
-		LoadAssemblies (102ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (56ms)
+	LoadAllAssembliesAndSetupDomain (149ms)
+		LoadAssemblies (84ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (155ms)
-			TypeCache.Refresh (153ms)
-				TypeCache.ScanAssembly (138ms)
+		AnalyzeDomain (146ms)
+			TypeCache.Refresh (145ms)
+				TypeCache.ScanAssembly (133ms)
 			ScanForSourceGeneratedMonoScriptInfo (1ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (631ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (455ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (585ms)
+		SetupLoadedEditorAssemblies (413ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (474ms)
-			SetLoadedEditorAssemblies (4ms)
+			InitializePlatformSupportModulesInManaged (269ms)
+			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (77ms)
-			ProcessInitializeOnLoadMethodAttributes (28ms)
+			ProcessInitializeOnLoadAttributes (103ms)
+			ProcessInitializeOnLoadMethodAttributes (36ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -143,12 +128,11 @@ Worker process is ready to serve import requests
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.607 seconds
-Native extension for AppleTV target not found
-Native extension for VisionOS target not found
-Native extension for iOS target not found
+- Loaded All Assemblies, in  0.714 seconds
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
@@ -156,11 +140,24 @@ Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-19/12 21:24:50.923 {DEBUG}   [AnalyticsLifeTime] Pre initialization finished.
-19/12 21:24:50.923 {DEBUG}   [AnalyticsLifeTime] Post-migration initialization finished.
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00040] in .\Library\PackageCache\com.unity.xr.oculus@4.3.0\Runtime\OculusLoader.cs:307 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0008c] in .\Library\PackageCache\com.unity.xr.oculus@4.3.0\Runtime\OculusLoader.cs:292 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <31687ccd371e4dc6b0c23a1317cf9474>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <31687ccd371e4dc6b0c23a1317cf9474>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <31687ccd371e4dc6b0c23a1317cf9474>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <5e53ad466ce74a6082606d7fa046fc9b>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
 Mono: successfully reloaded assembly
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
@@ -168,210 +165,153 @@ Mono: successfully reloaded assembly
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.750 seconds
-Domain Reload Profiling: 1356ms
-	BeginReloadAssembly (88ms)
+- Finished resetting the current domain, in  1.083 seconds
+Domain Reload Profiling: 1793ms
+	BeginReloadAssembly (122ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (3ms)
+		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (20ms)
-	RebuildCommonClasses (23ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (23ms)
-	LoadAllAssembliesAndSetupDomain (463ms)
-		LoadAssemblies (287ms)
+		CreateAndSetChildDomain (19ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (24ms)
+	LoadAllAssembliesAndSetupDomain (528ms)
+		LoadAssemblies (313ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (217ms)
-			TypeCache.Refresh (172ms)
-				TypeCache.ScanAssembly (152ms)
-			ScanForSourceGeneratedMonoScriptInfo (27ms)
-			ResolveRequiredComponents (16ms)
-	FinalizeReload (751ms)
+		AnalyzeDomain (283ms)
+			TypeCache.Refresh (220ms)
+				TypeCache.ScanAssembly (192ms)
+			ScanForSourceGeneratedMonoScriptInfo (44ms)
+			ResolveRequiredComponents (18ms)
+	FinalizeReload (1084ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (594ms)
+		SetupLoadedEditorAssemblies (865ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (18ms)
-			SetLoadedEditorAssemblies (3ms)
+			InitializePlatformSupportModulesInManaged (17ms)
+			SetLoadedEditorAssemblies (6ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (60ms)
-			ProcessInitializeOnLoadAttributes (479ms)
-			ProcessInitializeOnLoadMethodAttributes (33ms)
-			AfterProcessingInitializeOnLoad (1ms)
+			BeforeProcessingInitializeOnLoad (119ms)
+			ProcessInitializeOnLoadAttributes (639ms)
+			ProcessInitializeOnLoadMethodAttributes (78ms)
+			AfterProcessingInitializeOnLoad (5ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (2ms)
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+		AwakeInstancesAfterBackupRestoration (4ms)
 Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
-[OVRPlugin][INFO] UnityPluginLoad called
-Launching external process: /Applications/Unity/Hub/Editor/2022.3.50f1/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.03 seconds
-Refreshing native plugins compatible for Editor in 3.09 ms, found 11 plugins.
-Preloading 2 native plugins for Editor in 0.37 ms.
-Unloading 8304 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 52 unused Assets / (3.4 MB). Loaded Objects now: 8757.
-Memory consumption went from 352.8 MB to 349.4 MB.
-Total: 6.271917 ms (FindLiveObjects: 0.213292 ms CreateObjectMapping: 0.144875 ms MarkObjects: 5.278417 ms  DeleteObjects: 0.634792 ms)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 12.85 ms, found 16 plugins.
+Preloading 3 native plugins for Editor in 0.11 ms.
+Unloading 8380 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 119 unused Assets / (3.0 MB). Loaded Objects now: 8769.
+Memory consumption went from 356.3 MB to 353.3 MB.
+Total: 5.785000 ms (FindLiveObjects: 0.515400 ms CreateObjectMapping: 0.317900 ms MarkObjects: 4.479500 ms  DeleteObjects: 0.471600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:CustomObjectIndexerAttribute: 3ead1caaecf1c488f20bcfeb224b6af5 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 496776.701582 seconds.
-  path: Assets/Animal Asset/animate/deer/CUTE  deer bone - .fbx
-  artifactKey: Guid(ac6b069f69ea44d58a53298791167034) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animal Asset/animate/deer/CUTE  deer bone - .fbx using Guid(ac6b069f69ea44d58a53298791167034) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'e5d37fe478b68253b8ca59b5bfa5817a') in 0.217741 seconds
+  Time since last request: 10499.359061 seconds.
+  path: Assets/Animal Asset/animate/cri/idle.anim
+  artifactKey: Guid(dc2a67cbee1b24928a8b080b8020bab2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animal Asset/animate/cri/idle.anim using Guid(dc2a67cbee1b24928a8b080b8020bab2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '38162230459e5d0b1285b5348a487b2b') in 0.018568 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 155
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 47.303383 seconds.
-  path: Assets/Animal Asset/animate/cri
-  artifactKey: Guid(f3f14ccf1d5f64f2c8780eb8d17f7fd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animal Asset/animate/cri using Guid(f3f14ccf1d5f64f2c8780eb8d17f7fd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '75a88c00a6b699b88c3121415932ba46') in 0.000521 seconds
+  Time since last request: 408.246975 seconds.
+  path: Assets/Animal Asset/animate/cri/CRI.png
+  artifactKey: Guid(a0515dc44ba2149d7ab9f5f7a0a38a83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animal Asset/animate/cri/CRI.png using Guid(a0515dc44ba2149d7ab9f5f7a0a38a83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '02ab6f07fbd8d5246733dddecfcb0815') in 0.050923 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 5.227418 seconds.
+  path: Assets/Animal Asset/animate/bird
+  artifactKey: Guid(a51070ffb8d5a4dbc87bcc6b0eed29f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animal Asset/animate/bird using Guid(a51070ffb8d5a4dbc87bcc6b0eed29f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '6543ca08d80ab9c5f1ffaf6a46af70e9') in 0.000698 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000081 seconds.
-  path: Assets/Animal Asset/animate/cri/CRI  dance.fbx
-  artifactKey: Guid(46fea4f5feba745e481d62acff0c9f1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animal Asset/animate/cri/CRI  dance.fbx using Guid(46fea4f5feba745e481d62acff0c9f1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '5f445729a97b8e7081574079b913f3ba') in 0.038698 seconds
+  Time since last request: 0.065542 seconds.
+  path: Assets/Animal Asset/animate/bird/BIRD.png
+  artifactKey: Guid(a520cb6139a9c44d6ac7b32b4884a7ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animal Asset/animate/bird/BIRD.png using Guid(a520cb6139a9c44d6ac7b32b4884a7ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '2bcd066d3f3ab912d4fdc17c8954fa09') in 0.014688 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 70
+Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 104.697440 seconds.
-  path: Assets/Animal Asset/animate/cri/Armature_ArmatureAction.anim
-  artifactKey: Guid(dc2a67cbee1b24928a8b080b8020bab2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animal Asset/animate/cri/Armature_ArmatureAction.anim using Guid(dc2a67cbee1b24928a8b080b8020bab2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '0c281eea3ae9fc3735ec19b6992b2911') in 0.002481 seconds
+  Time since last request: 1.283662 seconds.
+  path: Assets/Animal Asset/animate/bird/idle.anim
+  artifactKey: Guid(7e78c1f9d0e574bf099f8faa907368ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animal Asset/animate/bird/idle.anim using Guid(7e78c1f9d0e574bf099f8faa907368ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'f64e4788dee521975cf3316cbb6018c6') in 0.015145 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 52.622268 seconds.
-  path: Assets/Animal Asset/animate/cri/Cricket.controller
-  artifactKey: Guid(fe757fc07c796401b8e79b4d1755ce25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animal Asset/animate/cri/Cricket.controller using Guid(fe757fc07c796401b8e79b4d1755ce25) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '12b37f1056d9ca081e1f5a51b3386cd5') in 0.001073 seconds
+  Time since last request: 15.531284 seconds.
+  path: Assets/Animal Asset/animate/bird/Armature.001_Armature.001Action.anim
+  artifactKey: Guid(e7a93e9b912294741967d08bc03b8bf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animal Asset/animate/bird/Armature.001_Armature.001Action.anim using Guid(e7a93e9b912294741967d08bc03b8bf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '918957ea2c18e2aa194425f4b7b9f9ea') in 0.004800 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 55.599403 seconds.
-  path: Assets/Animal Asset/animate/cri/idle.anim
-  artifactKey: Guid(dc2a67cbee1b24928a8b080b8020bab2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animal Asset/animate/cri/idle.anim using Guid(dc2a67cbee1b24928a8b080b8020bab2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '7ec95d6937c97b220b171335ffcffd05') in 0.002515 seconds
+  Time since last request: 8.875023 seconds.
+  path: Assets/Animal Asset/animate/bird/idle.anim
+  artifactKey: Guid(e7a93e9b912294741967d08bc03b8bf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animal Asset/animate/bird/idle.anim using Guid(e7a93e9b912294741967d08bc03b8bf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'a44a5482f0e1111853d91661089f0436') in 0.004576 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 303.770500 seconds.
-  path: Assets/Animal Asset/animate/cri/Cricket.controller
-  artifactKey: Guid(fe757fc07c796401b8e79b4d1755ce25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animal Asset/animate/cri/Cricket.controller using Guid(fe757fc07c796401b8e79b4d1755ce25) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '06f957f599b28755ff6f0c2b75a18afc') in 0.003985 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 17
-========================================================================
-Received Import Request.
-  Time since last request: 11.581570 seconds.
-  path: Assets/Animal Asset/animate/sq/Sq.controller
-  artifactKey: Guid(ef76a9505540b40ff942288c77c1319b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animal Asset/animate/sq/Sq.controller using Guid(ef76a9505540b40ff942288c77c1319b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '0d466a35f72c5562d125343b834c7670') in 0.005941 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 38.156670 seconds.
-  path: Assets/Animal Asset/animate/sq/dance  squi269.fbx
-  artifactKey: Guid(521b9c92f3732441899514802769352b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animal Asset/animate/sq/dance  squi269.fbx using Guid(521b9c92f3732441899514802769352b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'f837862ac6df3aa4af5507b30e89dd33') in 0.027002 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 133
-========================================================================
-Received Import Request.
-  Time since last request: 22.281019 seconds.
-  path: Assets/Animal Asset/animate/fox/Fox.controller
-  artifactKey: Guid(ae70097a1e71f421d8d0598dcfa869d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animal Asset/animate/fox/Fox.controller using Guid(ae70097a1e71f421d8d0598dcfa869d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '8ad7910b2b6a709d233da60245b38b72') in 0.006314 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 36.781428 seconds.
+  Time since last request: 61.806886 seconds.
   path: Assets/Animal Asset/animate/fox/cutetouch  animate fox bone156.fbx
   artifactKey: Guid(e2aef7b330f544b79bb15725ce987b6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animal Asset/animate/fox/cutetouch  animate fox bone156.fbx using Guid(e2aef7b330f544b79bb15725ce987b6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '7ac087644727e68d1cf73dd17a576c51') in 0.034538 seconds
+Start importing Assets/Animal Asset/animate/fox/cutetouch  animate fox bone156.fbx using Guid(e2aef7b330f544b79bb15725ce987b6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'edc6b71f82898691d3e5bce8c8c8af96') in 0.273511 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 136
-========================================================================
-Received Import Request.
-  Time since last request: 14.855343 seconds.
-  path: Assets/Animal Asset/animate/bird/thrush.controller
-  artifactKey: Guid(7aa0b1d0e345345cbbfdb7adbf3a68fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animal Asset/animate/bird/thrush.controller using Guid(7aa0b1d0e345345cbbfdb7adbf3a68fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '7f2949b0f6c3fd0547f67ef628f03ba4') in 0.013436 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
+Number of asset objects unloaded after import = 154
 ========================================================================
 Received Prepare
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
-Thread 0x37f11f000 may have been prematurely finalized
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.514 seconds
-Native extension for AppleTV target not found
-Native extension for VisionOS target not found
-Native extension for iOS target not found
+- Loaded All Assemblies, in  0.604 seconds
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
@@ -381,64 +321,81 @@ Native extension for OSXStandalone target not found
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00040] in .\Library\PackageCache\com.unity.xr.oculus@4.3.0\Runtime\OculusLoader.cs:307 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0008c] in .\Library\PackageCache\com.unity.xr.oculus@4.3.0\Runtime\OculusLoader.cs:292 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <31687ccd371e4dc6b0c23a1317cf9474>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <31687ccd371e4dc6b0c23a1317cf9474>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <31687ccd371e4dc6b0c23a1317cf9474>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <5e53ad466ce74a6082606d7fa046fc9b>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
 Mono: successfully reloaded assembly
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  1.515 seconds
-Domain Reload Profiling: 2030ms
-	BeginReloadAssembly (266ms)
+- Finished resetting the current domain, in  1.437 seconds
+Domain Reload Profiling: 2037ms
+	BeginReloadAssembly (171ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (13ms)
+		DisableScriptedObjects (8ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (175ms)
-	RebuildCommonClasses (23ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (14ms)
-	LoadAllAssembliesAndSetupDomain (202ms)
-		LoadAssemblies (182ms)
+		CreateAndSetChildDomain (48ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (24ms)
+	LoadAllAssembliesAndSetupDomain (359ms)
+		LoadAssemblies (373ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (62ms)
+		AnalyzeDomain (66ms)
 			TypeCache.Refresh (13ms)
 				TypeCache.ScanAssembly (2ms)
-			ScanForSourceGeneratedMonoScriptInfo (32ms)
-			ResolveRequiredComponents (17ms)
-	FinalizeReload (1516ms)
+			ScanForSourceGeneratedMonoScriptInfo (34ms)
+			ResolveRequiredComponents (18ms)
+	FinalizeReload (1437ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (517ms)
+		SetupLoadedEditorAssemblies (784ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (23ms)
-			SetLoadedEditorAssemblies (3ms)
+			InitializePlatformSupportModulesInManaged (16ms)
+			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (64ms)
-			ProcessInitializeOnLoadAttributes (391ms)
-			ProcessInitializeOnLoadMethodAttributes (35ms)
-			AfterProcessingInitializeOnLoad (1ms)
+			BeforeProcessingInitializeOnLoad (109ms)
+			ProcessInitializeOnLoadAttributes (585ms)
+			ProcessInitializeOnLoadMethodAttributes (64ms)
+			AfterProcessingInitializeOnLoad (4ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+		AwakeInstancesAfterBackupRestoration (10ms)
 Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
-Refreshing native plugins compatible for Editor in 8.72 ms, found 11 plugins.
-Preloading 2 native plugins for Editor in 0.45 ms.
-Unloading 7998 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 33 unused Assets / (3.4 MB). Loaded Objects now: 8857.
-Memory consumption went from 303.0 MB to 299.7 MB.
-Total: 6.837416 ms (FindLiveObjects: 0.291250 ms CreateObjectMapping: 0.209125 ms MarkObjects: 5.742958 ms  DeleteObjects: 0.593583 ms)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 10.21 ms, found 16 plugins.
+Preloading 3 native plugins for Editor in 0.11 ms.
+Unloading 8066 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 100 unused Assets / (3.0 MB). Loaded Objects now: 8872.
+Memory consumption went from 292.4 MB to 289.4 MB.
+Total: 8.279700 ms (FindLiveObjects: 0.669700 ms CreateObjectMapping: 0.531500 ms MarkObjects: 6.658100 ms  DeleteObjects: 0.419100 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/SM.cs: d230c50876ecbc23547bbc4367f55211 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 57fa4a837fb354d2035dff457405033f -> 9c823bc4d6b092ef487fe6afe1576c52
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:CustomObjectIndexerAttribute: 3ead1caaecf1c488f20bcfeb224b6af5 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
