@@ -73,45 +73,16 @@ public class BlockManager : MonoBehaviour
             //State 0: gray out
             case 0:
                 animator[animalCode].SetTrigger("1");
-                if (gameObject.name == "thrush")
-                {
-                    Acc_1[BlockIndex].SetActive(false);
-                    Acc_2[BlockIndex].SetActive(false);
                     renderer.material.color = Color.gray;
-                }
-                else
-                {
-                    renderer.material.color = Color.gray;
-                }
-
                 break;
             //State 1: switch the first accessory
             case 1:
                 animator[animalCode].SetTrigger("2");
-                if (gameObject.name == "thrush")
-                {
-                    Acc_2[BlockIndex].SetActive(false);
-                    Acc_1[BlockIndex].SetActive(true);
-                    renderer.material.color = Color.white;
-                }
-                else
-                {
                     renderer.material.color = Color.red;
-                }
-
                 break;
             //State 1: switcht to the second accessory
             case 2:
-                if (gameObject.name == "thrush")
-                {
-                    Acc_1[BlockIndex].SetActive(false);
-                    Acc_2[BlockIndex].SetActive(true);
-                    renderer.material.color = Color.white;
-                }
-                else
-                {
                     renderer.material.color = Color.blue;
-                }
                 break;
             default: break; // Handle invalid indices
         }
@@ -136,18 +107,18 @@ public class BlockManager : MonoBehaviour
     }
     void SwitchAnimation(int index)
     {
-        if (gameObject.name == "fox")
+        if (gameObject.name == "fox" || gameObject.name == "thrush")
         {
             animator[index].SetTrigger("Switch");
         }
     }
     public void ShowBlock()
     {
-        if (gameObject.name == "fox")
+        if (gameObject.name == "fox" || gameObject.name == "thrush")
         {
             foreach (Animator anim in animator)
             {
-                anim.SetBool("Show", true);
+                anim.SetTrigger("Show");
             }
         }
     }
