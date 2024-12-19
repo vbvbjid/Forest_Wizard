@@ -80,7 +80,6 @@
     <Compile Include="Assets/Script/EightDirectionMovement.cs" />
     <Compile Include="Assets/Script/Swing.cs" />
     <Compile Include="Assets/SharedAssets/Scripts/Runtime/DisableIfTransitionManager.cs" />
-    <Compile Include="Assets/Animal Asset/Quirky Series Ultimate/_Scripts/RotateOnScroll.cs" />
     <Compile Include="Assets/Script/DebugLogToCanvas.cs" />
     <Compile Include="Assets/Script/newAM.cs" />
     <Compile Include="Assets/SharedAssets/Scripts/Runtime/SceneLoader.cs" />
@@ -107,9 +106,9 @@
     <Compile Include="Assets/Script/spaceCollider.cs" />
     <Compile Include="Assets/Script/buffer_AM.cs" />
     <Compile Include="Assets/SharedAssets/Scripts/Runtime/GlobalVolumeFeature.cs" />
+    <Compile Include="Assets/BaseDrum.cs" />
     <Compile Include="Assets/SharedAssets/Scripts/Runtime/FullscreenEffect.cs" />
     <Compile Include="Assets/Samples/Universal RP/14.0.11/URP Package Samples/LensFlares/Scripts/ScreenSpacePlacement.cs" />
-    <Compile Include="Assets/Animal Asset/Quirky Series Ultimate/_Scripts/QuirkySeriesDemo.cs" />
     <Compile Include="Assets/touch.cs" />
     <Compile Include="Assets/SharedAssets/Scripts/Runtime/ScreenController.cs" />
     <Compile Include="Assets/Script/Method/AudioMethod.cs" />
@@ -146,7 +145,6 @@
     <None Include="Assets/SharedAssets/TextMeshPro/Shaders/TMPro.cginc" />
     <None Include="Assets/SharedAssets/TextMeshPro/Shaders/TMP_SDF-Mobile-Overlay.shader" />
     <None Include="Assets/SharedAssets/TextMeshPro/Shaders/TMP_Bitmap.shader" />
-    <None Include="Assets/Animal Asset/Quirky Series Ultimate/_Shader/SoftSurface.shader" />
     <None Include="Assets/SharedAssets/Benchmark/BenchmarkUI.uxml" />
     <None Include="Assets/SharedAssets/Benchmark/BenchmarkUI.uss" />
     <None Include="Assets/SharedAssets/TextMeshPro/Shaders/TMPro_Mobile.cginc" />
@@ -184,7 +182,6 @@
     <None Include="Assets/SharedAssets/TextMeshPro/Fonts/LiberationSans-OFL.txt" />
     <None Include="Assets/SharedAssets/TextMeshPro/Shaders/TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets/SharedAssets/Shaders/HLSL/CustomLighting.hlsl" />
-    <None Include="Assets/Animal Asset/Quirky Series Ultimate/_Shader/ToonRamp.shader" />
     <None Include="Assets/SharedAssets/TextMeshPro/Shaders/TMP_SDF-Mobile.shader" />
     <None Include="Assets/SharedAssets/TextMeshPro/Shaders/TMP_Sprite.shader" />
   </ItemGroup>

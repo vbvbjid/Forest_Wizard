@@ -68,7 +68,8 @@ public class newAM : MonoBehaviour
                         audioSource[objectIndex].clip = null;
                         break;
                 }
-                BlockManager.ChangeState(objectIndex, currentState[objectIndex]);
+                StartCoroutine(BlockManager.ChangeState(objectIndex, currentState[objectIndex]));
+                
                 StartCoroutine(BlockManager.PressEffect(1.0f, objectIndex));
             }
         }

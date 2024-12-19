@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.EditorCoroutines.Editor;
 using UnityEngine;
+using UnityEngine.Animations;
 
 public class BlockManager : MonoBehaviour
 {
@@ -41,25 +42,46 @@ public class BlockManager : MonoBehaviour
         InteractedBlock = 4;  // Reset the InteractedThrush counter
     }
 
-    public void ChangeState(int BlockIndex, int StateIndex)
+    public IEnumerator ChangeState(int BlockIndex, int StateIndex)
     {
+        SwitchAnimation(BlockIndex);
+        yield return new WaitForSeconds(1.0f);
         // Get the Renderer component of the object at the given BlockIndex
         Renderer renderer = materialGameObjects[BlockIndex].GetComponent<Renderer>();
+        int animalCode = 0;
+        if(gameObject.name == "thrush"){
+            animalCode = 0;
+        }
+        else if(gameObject.name == "thrush"){
+            animalCode = 1;
+        }
+        else if(gameObject.name == "Squirrel&Cricket"){
+            animalCode = 2;
+        }
+        else if(gameObject.name == "Buck"){
+            animalCode = 3;
+        }
         switch (StateIndex)
         {
             //State 0: gray out
             case 0:
-                if (gameObject.name == "fox" || gameObject.name == "thrush")
+                animator[animalCode].SetTrigger("1");
+                if (gameObject.name == "thrush")
                 {
                     Acc_1[BlockIndex].SetActive(false);
                     Acc_2[BlockIndex].SetActive(false);
-
+                    renderer.material.color = Color.gray;
                 }
-                renderer.material.color = Color.gray;
+                else
+                {
+                    renderer.material.color = Color.gray;
+                }
+
                 break;
             //State 1: switch the first accessory
             case 1:
-                if (gameObject.name == "fox" || gameObject.name == "thrush")
+                animator[animalCode].SetTrigger("2");
+                if (gameObject.name == "thrush")
                 {
                     Acc_2[BlockIndex].SetActive(false);
                     Acc_1[BlockIndex].SetActive(true);
@@ -73,7 +95,7 @@ public class BlockManager : MonoBehaviour
                 break;
             //State 1: switcht to the second accessory
             case 2:
-                if (gameObject.name == "fox" || gameObject.name == "thrush")
+                if (gameObject.name == "thrush")
                 {
                     Acc_1[BlockIndex].SetActive(false);
                     Acc_2[BlockIndex].SetActive(true);
@@ -103,23 +125,23 @@ public class BlockManager : MonoBehaviour
     public void SetMaterialEmission(int index, float duration)
     {
         Renderer renderer = materialGameObjects[index].GetComponent<Renderer>();
-        if (gameObject.name == "fox" || gameObject.name == "thrush")
-            animator[index].SetBool("Sing", true);
         emitCoroutine = StartCoroutine(EmitForFixedTime(renderer, duration, index));  // Start the emission for a fixed time
     }
-    void PlayBounceAnimation(int index)
+    void SwitchAnimation(int index)
     {
-        if (gameObject.name == "thrush")
+        if (gameObject.name == "fox")
         {
-            animator[index].SetTrigger("Bounce");
-            // Start coroutine to resume animations
-            StartCoroutine(ResumeAnimationsAfterDelay(index, animator[index].GetCurrentAnimatorStateInfo(0).length, "Bounce"));
+            animator[index].SetTrigger("Switch");
         }
-        else if (gameObject.name == "fox")
+    }
+    public void ShowBlock()
+    {
+        if (gameObject.name == "fox")
         {
-            animator[index].SetBool("switch", true);
-            animator[index].Play("Fox_Somersault_InPlace");
-            StartCoroutine(ResumeAnimationsAfterDelay(index, animator[index].GetCurrentAnimatorStateInfo(0).length, "switch"));
+            foreach (Animator anim in animator)
+            {
+                anim.SetBool("Show", true);
+            }
         }
     }
     public IEnumerator PlayAnimationsAndShowBlocks(int currentAnimal)
@@ -183,12 +205,10 @@ public class BlockManager : MonoBehaviour
     }
     public IEnumerator PressEffect(float duration, int index)
     {
+
         Vector3 originalPosition = materialGameObjects[index].transform.localPosition;
         float bounceHeight = 0.05f;
         float bounceSpeed = 2.0f;
-
-        // Trigger the bounce animation if applicable
-        //PlayBounceAnimation(index);
 
         // Handle the thrush interaction logic
         if (Blocks[index] == false)

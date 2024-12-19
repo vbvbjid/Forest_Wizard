@@ -62,6 +62,7 @@ public class Animal : MonoBehaviour
         //check collision object
         if (!collision.gameObject.CompareTag("Wand")) return;
         // Play audio and animation
+        animator.SetTrigger("Touch");  
         StartCoroutine(ShoutCoroutine());
         double startTime;
         //GameManager.Instance.ShowBlocks(GameManager.Instance.currentAnimal);
@@ -74,6 +75,11 @@ public class Animal : MonoBehaviour
             GameManager.Instance.Base.PlayScheduled(startTime);
             Debug.Log("BGM: " + startTime);
             newAM.nextStartTime = startTime;
+            if (AnimalCode == 1)
+            {
+                Debug.Log("Bloom");
+                blockManager.ShowBlock();
+            }
             StartCoroutine(EnableBlock((float)(startTime - AudioSettings.dspTime + 1)));
             newAM.musicStart = true;
         }

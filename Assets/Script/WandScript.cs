@@ -41,9 +41,10 @@ public class WandScript : MonoBehaviour
                 };
 
                 // Assuming `code` is the result of looking up the string from `stringToEnum`
-                if (stringToEnum.TryGetValue(parent.name, out int code) && newAM[code].blockActive)
+                if (stringToEnum.TryGetValue(parent.name, out int code))
                 {
-                    newAM[code].SwitchAudioState(blockNumber);
+                    if(newAM[code].blockActive)
+                        newAM[code].SwitchAudioState(blockNumber);
                     /*switch (code)
                     {
                         case 0:
