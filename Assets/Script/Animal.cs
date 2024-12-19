@@ -9,6 +9,7 @@ public class Animal : MonoBehaviour
     public BlockManager blockManager;
     public bool BGMscheduled = false;
     public newAM newAM;
+    public AudioSource Guide;
     public void Start()
     {
         audioSource = gameObject.GetComponent<AudioSource>();
@@ -81,6 +82,7 @@ public class Animal : MonoBehaviour
                 blockManager.ShowBlock();
             }
             StartCoroutine(EnableBlock((float)(startTime - AudioSettings.dspTime + 1)));
+            Guide.Play();
             newAM.musicStart = true;
         }
     }

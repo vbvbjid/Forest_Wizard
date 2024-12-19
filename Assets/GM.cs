@@ -3,13 +3,14 @@ using UnityEngine.SceneManagement;
 using System.Collections;
 public class GM : MonoBehaviour
 {
+    public AudioSource audioSource;
     public GameObject fadeScreen;
     public Camera targetCamera; // Assign the camera in the Inspector
     public CameraClearFlags backgroundType = CameraClearFlags.Skybox; // Default background type
     // Coroutine to gradually change the alpha of a material
     public void Bonttonswitch()
     {
-        StartCoroutine(SwitchScene(1, 2, "morning"));
+        StartCoroutine(SwitchScene(1, 2, "op"));
     }
     void Start()
     {
@@ -17,6 +18,11 @@ public class GM : MonoBehaviour
             targetCamera.clearFlags = CameraClearFlags.Skybox;
             StartCoroutine(SwitchScene(0, 2, "morning"));
         }
+        StartCoroutine(Guide());
+    }
+    public IEnumerator Guide(){
+        yield return new WaitForSeconds(5.0f);
+        audioSource.Play();
     }
     public IEnumerator SwitchScene(float targetAlpha, float duration, string sceneName)
     {
