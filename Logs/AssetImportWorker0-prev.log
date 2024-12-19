@@ -22,7 +22,7 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-61303
+62117
 Successfully changed project path to: /Users/johnsonlai/Desktop/Forest_Wizard
 /Users/johnsonlai/Desktop/Forest_Wizard
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -58,13 +58,13 @@ Successfully changed project path to: /Users/johnsonlai/Desktop/Forest_Wizard
     "memorysetup-temp-allocator-size-gfx=262144"
 Player connection [8591996992]  Target information:
 
-Player connection [8591996992]  * "[IP] 192.168.0.220 [Port] 0 [Flags] 2 [Guid] 4197165342 [EditorId] 4197165342 [Version] 1048832 [Id] OSXEditor(0,MacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+Player connection [8591996992]  * "[IP] 192.168.0.220 [Port] 0 [Flags] 2 [Guid] 90376570 [EditorId] 90376570 [Version] 1048832 [Id] OSXEditor(0,MacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
 
 Player connection [8591996992] Host joined multi-casting on [225.0.0.222:54997]...
 Player connection [8591996992] Host joined alternative multi-casting on [225.0.0.222:34997]...
 [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-Refreshing native plugins compatible for Editor in 7.65 ms, found 11 plugins.
-Preloading 2 native plugins for Editor in 6.92 ms.
+Refreshing native plugins compatible for Editor in 6.88 ms, found 11 plugins.
+Preloading 2 native plugins for Editor in 3.70 ms.
 Initialize engine version: 2022.3.50f1 (c3db7f8bf9b1)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2022.3.50f1/Unity.app/Contents/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path /Users/johnsonlai/Desktop/Forest_Wizard/Assets
@@ -80,7 +80,7 @@ Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2022.3.50f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2022.3.50f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/2022.3.50f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56876
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56809
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2022.3.50f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
@@ -88,52 +88,52 @@ Register platform support module: /Applications/Unity/Hub/Editor/2022.3.50f1/Pla
 Register platform support module: /Applications/Unity/Hub/Editor/2022.3.50f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2022.3.50f1/PlaybackEngines/VisionOSPlayer/UnityEditor.VisionOS.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2022.3.50f1/PlaybackEngines/AppleTVSupport/UnityEditor.AppleTV.Extensions.dll
-Registered in 0.003014 seconds.
-- Loaded All Assemblies, in  0.345 seconds
+Registered in 0.003543 seconds.
+- Loaded All Assemblies, in  0.332 seconds
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 [usbmuxd] Send listen message
 Native extension for AppleTV target not found
-objc[82876]: Class XcodeScriptingDelegate is implemented in both /Applications/Unity/Hub/Editor/2022.3.50f1/PlaybackEngines/AppleTVSupport/arm64/UnityEditor.iOS.Native.dylib (0x17ffdc5d8) and /Applications/Unity/Hub/Editor/2022.3.50f1/PlaybackEngines/VisionOSPlayer/arm64/UnityEditor.VisionOS.Native.dylib (0x35012c5d8). One of the two will be used. Which one is undefined.
+objc[83809]: Class XcodeScriptingDelegate is implemented in both /Applications/Unity/Hub/Editor/2022.3.50f1/PlaybackEngines/AppleTVSupport/arm64/UnityEditor.iOS.Native.dylib (0x349bd45d8) and /Applications/Unity/Hub/Editor/2022.3.50f1/PlaybackEngines/VisionOSPlayer/arm64/UnityEditor.VisionOS.Native.dylib (0x349f145d8). One of the two will be used. Which one is undefined.
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 [usbmuxd] Send listen message
 Native extension for VisionOS target not found
 Native extension for iOS target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 112 ms
+Android Extension - Scanning For ADB Devices 147 ms
 Native extension for OSXStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.426 seconds
-Domain Reload Profiling: 772ms
-	BeginReloadAssembly (84ms)
+- Finished resetting the current domain, in  0.544 seconds
+Domain Reload Profiling: 876ms
+	BeginReloadAssembly (86ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (0ms)
-	RebuildCommonClasses (58ms)
-	RebuildNativeTypeToScriptingClass (16ms)
-	initialDomainReloadingComplete (57ms)
-	LoadAllAssembliesAndSetupDomain (130ms)
-		LoadAssemblies (83ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (35ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (50ms)
+	LoadAllAssembliesAndSetupDomain (150ms)
+		LoadAssemblies (86ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (128ms)
-			TypeCache.Refresh (127ms)
-				TypeCache.ScanAssembly (117ms)
+		AnalyzeDomain (148ms)
+			TypeCache.Refresh (145ms)
+				TypeCache.ScanAssembly (128ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (427ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (544ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (379ms)
+		SetupLoadedEditorAssemblies (484ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (240ms)
+			InitializePlatformSupportModulesInManaged (392ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (1ms)
-			ProcessInitializeOnLoadAttributes (82ms)
-			ProcessInitializeOnLoadMethodAttributes (52ms)
+			ProcessInitializeOnLoadAttributes (65ms)
+			ProcessInitializeOnLoadMethodAttributes (24ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -143,7 +143,7 @@ Worker process is ready to serve import requests
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.581 seconds
+- Loaded All Assemblies, in  0.617 seconds
 Native extension for AppleTV target not found
 Native extension for VisionOS target not found
 Native extension for iOS target not found
@@ -156,8 +156,8 @@ Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-19/12 23:15:58.619 {DEBUG}   [AnalyticsLifeTime] Pre initialization finished.
-19/12 23:15:58.619 {DEBUG}   [AnalyticsLifeTime] Post-migration initialization finished.
+20/12 00:29:36.686 {DEBUG}   [AnalyticsLifeTime] Pre initialization finished.
+20/12 00:29:36.686 {DEBUG}   [AnalyticsLifeTime] Post-migration initialization finished.
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
@@ -168,36 +168,36 @@ Mono: successfully reloaded assembly
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.697 seconds
-Domain Reload Profiling: 1273ms
-	BeginReloadAssembly (82ms)
+- Finished resetting the current domain, in  0.748 seconds
+Domain Reload Profiling: 1365ms
+	BeginReloadAssembly (83ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (3ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (17ms)
-	RebuildCommonClasses (21ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (21ms)
-	LoadAllAssembliesAndSetupDomain (444ms)
-		LoadAssemblies (274ms)
+		CreateAndSetChildDomain (19ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (23ms)
+	LoadAllAssembliesAndSetupDomain (479ms)
+		LoadAssemblies (298ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (207ms)
-			TypeCache.Refresh (165ms)
-				TypeCache.ScanAssembly (145ms)
-			ScanForSourceGeneratedMonoScriptInfo (25ms)
-			ResolveRequiredComponents (15ms)
-	FinalizeReload (697ms)
+		AnalyzeDomain (218ms)
+			TypeCache.Refresh (173ms)
+				TypeCache.ScanAssembly (152ms)
+			ScanForSourceGeneratedMonoScriptInfo (27ms)
+			ResolveRequiredComponents (17ms)
+	FinalizeReload (748ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (546ms)
+		SetupLoadedEditorAssemblies (583ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (18ms)
+			InitializePlatformSupportModulesInManaged (19ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (61ms)
-			ProcessInitializeOnLoadAttributes (431ms)
-			ProcessInitializeOnLoadMethodAttributes (32ms)
+			BeforeProcessingInitializeOnLoad (64ms)
+			ProcessInitializeOnLoadAttributes (461ms)
+			ProcessInitializeOnLoadMethodAttributes (34ms)
 			AfterProcessingInitializeOnLoad (1ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -207,12 +207,12 @@ Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
 [OVRPlugin][INFO] UnityPluginLoad called
 Launching external process: /Applications/Unity/Hub/Editor/2022.3.50f1/Unity.app/Contents/Tools/UnityShaderCompiler
 Launched and connected shader compiler UnityShaderCompiler after 0.03 seconds
-Refreshing native plugins compatible for Editor in 4.44 ms, found 11 plugins.
-Preloading 2 native plugins for Editor in 0.53 ms.
+Refreshing native plugins compatible for Editor in 3.35 ms, found 11 plugins.
+Preloading 2 native plugins for Editor in 0.38 ms.
 Unloading 8305 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 52 unused Assets / (3.4 MB). Loaded Objects now: 8758.
-Memory consumption went from 352.7 MB to 349.3 MB.
-Total: 6.021958 ms (FindLiveObjects: 0.307750 ms CreateObjectMapping: 0.167041 ms MarkObjects: 5.035584 ms  DeleteObjects: 0.511166 ms)
+Memory consumption went from 352.6 MB to 349.2 MB.
+Total: 6.806958 ms (FindLiveObjects: 0.286084 ms CreateObjectMapping: 0.195917 ms MarkObjects: 5.763042 ms  DeleteObjects: 0.561375 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -229,315 +229,63 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 501301.840061 seconds.
-  path: Assets/Audio/Soundpack(mp3)/Fox
-  artifactKey: Guid(3c6d9f1991042482d84e42186b13f0dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Soundpack(mp3)/Fox using Guid(3c6d9f1991042482d84e42186b13f0dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '106a92de1d54f041bf5389d201ce812c') in 0.001427 seconds
+  Time since last request: 505710.549366 seconds.
+  path: Assets/Animal Asset/animate/cri/CRICRI  DANCE.fbx
+  artifactKey: Guid(e39b8181f5fb943e98a13c053edc23ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animal Asset/animate/cri/CRICRI  DANCE.fbx using Guid(e39b8181f5fb943e98a13c053edc23ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '4c7c635c01c0b3cb7efc9d01a48553cb') in 0.210008 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
+Number of asset objects unloaded after import = 88
 ========================================================================
 Received Import Request.
-  Time since last request: 71.228696 seconds.
-  path: Assets/Audio/New_animals/deer(new)/stage2
-  artifactKey: Guid(7fcf87d7da77e4f70b14cb01a29b3983) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/New_animals/deer(new)/stage2 using Guid(7fcf87d7da77e4f70b14cb01a29b3983) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '843ada7ba48b434216462721be241d5a') in 0.000376 seconds
+  Time since last request: 15.827485 seconds.
+  path: Assets/Animal Asset/animate/cri/Armature_ArmatureAction.anim
+  artifactKey: Guid(ec3d92e268ecf48c1bc8acf8aad12a72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animal Asset/animate/cri/Armature_ArmatureAction.anim using Guid(ec3d92e268ecf48c1bc8acf8aad12a72) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'a2d719faba3507342d25b59a3bb7f7d5') in 0.002592 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 233.155441 seconds.
-  path: Assets/Audio/New_animals/deer(new)/stage2 2
-  artifactKey: Guid(5a35f02ede5a7406781749eb698b0926) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/New_animals/deer(new)/stage2 2 using Guid(5a35f02ede5a7406781749eb698b0926) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'ebd52721f778cd49fa17b1848339a72b') in 0.001633 seconds
+  Time since last request: 0.840097 seconds.
+  path: Assets/Animal Asset/animate/cri/idle.anim
+  artifactKey: Guid(dc2a67cbee1b24928a8b080b8020bab2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animal Asset/animate/cri/idle.anim using Guid(dc2a67cbee1b24928a8b080b8020bab2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '686e536ccd83858d51880ab282b220fd') in 0.004029 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 0.977209 seconds.
-  path: Assets/Audio/New_animals/deer(new)/stage2 2/deer_2A.wav
-  artifactKey: Guid(0f7209e5ab5e04093b25db11ed598624) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/New_animals/deer(new)/stage2 2/deer_2A.wav using Guid(0f7209e5ab5e04093b25db11ed598624) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '5caf85e28ffa694aefef4d5f1c53ad47') in 0.142236 seconds
+  Time since last request: 9.149746 seconds.
+  path: Assets/Animal Asset/animate/cri/idle.anim
+  artifactKey: Guid(ec3d92e268ecf48c1bc8acf8aad12a72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animal Asset/animate/cri/idle.anim using Guid(ec3d92e268ecf48c1bc8acf8aad12a72) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'cc8b912e68b58899f08faddf91ee3e14') in 0.002389 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Audio/New_animals/deer(new)/stage2 2/deer_2C.wav
-  artifactKey: Guid(e26bdad81ddb8438cbbc25bb2e5f23b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/New_animals/deer(new)/stage2 2/deer_2C.wav using Guid(e26bdad81ddb8438cbbc25bb2e5f23b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '65d8b0a3610520fab691dbfef84c679b') in 0.005934 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 25.657212 seconds.
-  path: Assets/Audio/New_animals/S&C(new)/stage2
-  artifactKey: Guid(90b0a23857f1041ab8cfdd9cf9b501e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/New_animals/S&C(new)/stage2 using Guid(90b0a23857f1041ab8cfdd9cf9b501e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '1cf81fbcf51a83c7771a35ae944690ef') in 0.000565 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 10.029571 seconds.
-  path: Assets/Audio/New_animals/S&C(new)/stage2/S&C_2A.wav
-  artifactKey: Guid(5d8f8c1344b034090b232613f5c557ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/New_animals/S&C(new)/stage2/S&C_2A.wav using Guid(5d8f8c1344b034090b232613f5c557ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'b315986d31bd6ac32715547ddd20e911') in 0.005767 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/Audio/New_animals/S&C(new)/stage2/S&C_2D.wav
-  artifactKey: Guid(d9886e2fa941c45279d2540e5f1c4e22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/New_animals/S&C(new)/stage2/S&C_2D.wav using Guid(d9886e2fa941c45279d2540e5f1c4e22) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '6170f89a8250aa943a8dccf4ca789ae4') in 0.004841 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 29.894020 seconds.
-  path: Assets/Audio/New_animals/fox(new)/stage2
-  artifactKey: Guid(e01a479afc35e4acf82028ee05791906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/New_animals/fox(new)/stage2 using Guid(e01a479afc35e4acf82028ee05791906) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '2595b78bd8d952773c94b8629a8258d6') in 0.000292 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 26.192056 seconds.
-  path: Assets/Audio/New_animals/fox(new)/stage2 3
-  artifactKey: Guid(80fe75fb5fb934335b6def170cb0968f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/New_animals/fox(new)/stage2 3 using Guid(80fe75fb5fb934335b6def170cb0968f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'eae744328be62d32e9d56a5180d6a4e8') in 0.000295 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.015549 seconds.
-  path: Assets/Audio/New_animals/fox(new)/stage2 3/fox_2A.wav
-  artifactKey: Guid(4c9c7293a1e9e4b159a200655ba7d1ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/New_animals/fox(new)/stage2 3/fox_2A.wav using Guid(4c9c7293a1e9e4b159a200655ba7d1ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'e949062ec1a34d7b8e3ce99bedfc6275') in 0.004590 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/Audio/New_animals/fox(new)/stage2 3/fox_2D.wav
-  artifactKey: Guid(2c3ed19aa53874bd5bfa9f63dafd21b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/New_animals/fox(new)/stage2 3/fox_2D.wav using Guid(2c3ed19aa53874bd5bfa9f63dafd21b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '9f1a0cf06d5347024c4d03bdc7ca8aba') in 0.004308 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 53.237768 seconds.
-  path: Assets/Audio/New_animals/birds(new)/stage2/birds_2A.wav
-  artifactKey: Guid(45df51ba2001844ba8ba425873359919) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/New_animals/birds(new)/stage2/birds_2A.wav using Guid(45df51ba2001844ba8ba425873359919) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'e91bfc217f11b55fd3f15721f2b196b7') in 0.008313 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000086 seconds.
-  path: Assets/Audio/New_animals/birds(new)/stage2
-  artifactKey: Guid(6401e61c1c7a342f9aa51f0412075e7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/New_animals/birds(new)/stage2 using Guid(6401e61c1c7a342f9aa51f0412075e7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '8cc713e3ae8a31d2a06d722c6cfeada3') in 0.000256 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000082 seconds.
-  path: Assets/Audio/New_animals/birds(new)/stage2/birds_2C.wav
-  artifactKey: Guid(220f6c616df014f06a3042e5c08808c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/New_animals/birds(new)/stage2/birds_2C.wav using Guid(220f6c616df014f06a3042e5c08808c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '4810a553bd3e86d1f6bb9a821c143d0a') in 0.005647 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 66.054116 seconds.
-  path: Assets/Animal Asset/Solo_Mute.fbx
-  artifactKey: Guid(cb3590124ea5d480a87d8a8fe997183e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animal Asset/Solo_Mute.fbx using Guid(cb3590124ea5d480a87d8a8fe997183e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'd031d08a42443a7b934d22d68a1038de') in 0.252595 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 39
-========================================================================
-Received Import Request.
-  Time since last request: 3.399836 seconds.
-  path: Assets/Animal Asset/Solo_Mute 1.fbx
-  artifactKey: Guid(0a231a495a52140859edfe20ecc16814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animal Asset/Solo_Mute 1.fbx using Guid(0a231a495a52140859edfe20ecc16814) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'e176c059422f584b4de17b02b7bd7434') in 0.042146 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 21
-========================================================================
-Received Import Request.
-  Time since last request: 10.146351 seconds.
-  path: Assets/Animal Asset/Bass_Drum_Panel-1.fbx
-  artifactKey: Guid(f49391051a9f54c27bf1fef74c63703b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animal Asset/Bass_Drum_Panel-1.fbx using Guid(f49391051a9f54c27bf1fef74c63703b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '64ba61e04ef15f6b621fc4d9f6e4d5a2') in 0.052268 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 27
-========================================================================
-Received Import Request.
-  Time since last request: 669.202753 seconds.
-  path: Assets/Animal Asset/FLO 1 DOWN.fbx
-  artifactKey: Guid(8b944aa3aeacb498caa0d7d1689e513f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animal Asset/FLO 1 DOWN.fbx using Guid(8b944aa3aeacb498caa0d7d1689e513f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '92325c43d1ac2437eac2543fe8576612') in 0.054570 seconds
+  Time since last request: 1.800877 seconds.
+  path: Assets/Animal Asset/animate/cri/Cricket.controller
+  artifactKey: Guid(fe757fc07c796401b8e79b4d1755ce25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animal Asset/animate/cri/Cricket.controller using Guid(fe757fc07c796401b8e79b4d1755ce25) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'a8c52deaf80e50a3ebfed6a81d44e0d6') in 0.001679 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 16
-========================================================================
-Received Import Request.
-  Time since last request: 2.056816 seconds.
-  path: Assets/Animal Asset/FLO 1 up.fbx
-  artifactKey: Guid(6f6351346fcd74f689b56e66e6b99486) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animal Asset/FLO 1 up.fbx using Guid(6f6351346fcd74f689b56e66e6b99486) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '81edbcb9b37b859768c93cde8c3b1bb7') in 0.017723 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 16
-========================================================================
-Received Import Request.
-  Time since last request: 783.335686 seconds.
-  path: Assets/Animal Asset/animate/bird/flower.controller
-  artifactKey: Guid(962f15c54586b48a88302f0354188774) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animal Asset/animate/bird/flower.controller using Guid(962f15c54586b48a88302f0354188774) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '2ec380d29e8c4710d14dc34f508b8575') in 0.003994 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 109.957135 seconds.
-  path: Assets/Animal Asset/Plane.004_Plane.004Action.anim
-  artifactKey: Guid(5deb81cb06c4740379818a6ec09d72b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animal Asset/Plane.004_Plane.004Action.anim using Guid(5deb81cb06c4740379818a6ec09d72b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '3d4ffe19930b57883a0dd01e3bdd6dbc') in 0.001276 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 4.269083 seconds.
-  path: Assets/Animal Asset/close.anim
-  artifactKey: Guid(5deb81cb06c4740379818a6ec09d72b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animal Asset/close.anim using Guid(5deb81cb06c4740379818a6ec09d72b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '56f907d5d49ecfddf45afe002e7b0dad') in 0.000738 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 21.220484 seconds.
-  path: Assets/Animal Asset/Plane.004_Plane.004Action.anim
-  artifactKey: Guid(44596acf10f634728ba0f0cabbd8aee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animal Asset/Plane.004_Plane.004Action.anim using Guid(44596acf10f634728ba0f0cabbd8aee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'c5e6b182ba81a30674ea1be440a43560') in 0.000865 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 3.510086 seconds.
-  path: Assets/Animal Asset/open.anim
-  artifactKey: Guid(44596acf10f634728ba0f0cabbd8aee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animal Asset/open.anim using Guid(44596acf10f634728ba0f0cabbd8aee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '2edc94adc5be340a6f650475bcd284bb') in 0.000879 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 137.369947 seconds.
-  path: Assets/Animal Asset/animate/bird/flower.controller
-  artifactKey: Guid(962f15c54586b48a88302f0354188774) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animal Asset/animate/bird/flower.controller using Guid(962f15c54586b48a88302f0354188774) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'd7854ab8c2b98a86c272ff90384d6e06') in 0.000989 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 53.478462 seconds.
-  path: Assets/Animal Asset/animate/bird/idle.anim
-  artifactKey: Guid(e7a93e9b912294741967d08bc03b8bf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animal Asset/animate/bird/idle.anim using Guid(e7a93e9b912294741967d08bc03b8bf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'a44a5482f0e1111853d91661089f0436') in 0.004467 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 7.854074 seconds.
-  path: Assets/Animal Asset/animate/bird/idle.anim
-  artifactKey: Guid(e7a93e9b912294741967d08bc03b8bf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animal Asset/animate/bird/idle.anim using Guid(e7a93e9b912294741967d08bc03b8bf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '25b39ddbee294708fbbed3e321049068') in 0.004036 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
 ========================================================================
 Received Prepare
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
-Thread 0x38298b000 may have been prematurely finalized
+Thread 0x387b87000 may have been prematurely finalized
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.500 seconds
+- Loaded All Assemblies, in  0.374 seconds
 Native extension for AppleTV target not found
 Native extension for VisionOS target not found
 Native extension for iOS target not found
@@ -556,48 +304,48 @@ Mono: successfully reloaded assembly
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  1.435 seconds
-Domain Reload Profiling: 1934ms
-	BeginReloadAssembly (222ms)
+- Finished resetting the current domain, in  1.417 seconds
+Domain Reload Profiling: 1790ms
+	BeginReloadAssembly (115ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (26ms)
+		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (96ms)
-	RebuildCommonClasses (23ms)
+		CreateAndSetChildDomain (52ms)
+	RebuildCommonClasses (22ms)
 	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (18ms)
-	LoadAllAssembliesAndSetupDomain (229ms)
-		LoadAssemblies (219ms)
+	initialDomainReloadingComplete (13ms)
+	LoadAllAssembliesAndSetupDomain (215ms)
+		LoadAssemblies (182ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (65ms)
+		AnalyzeDomain (63ms)
 			TypeCache.Refresh (13ms)
 				TypeCache.ScanAssembly (2ms)
 			ScanForSourceGeneratedMonoScriptInfo (33ms)
-			ResolveRequiredComponents (18ms)
-	FinalizeReload (1435ms)
+			ResolveRequiredComponents (17ms)
+	FinalizeReload (1417ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (483ms)
+		SetupLoadedEditorAssemblies (473ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (17ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (63ms)
-			ProcessInitializeOnLoadAttributes (365ms)
-			ProcessInitializeOnLoadMethodAttributes (33ms)
-			AfterProcessingInitializeOnLoad (1ms)
+			BeforeProcessingInitializeOnLoad (60ms)
+			ProcessInitializeOnLoadAttributes (361ms)
+			ProcessInitializeOnLoadMethodAttributes (30ms)
+			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (7ms)
 Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 4.01 ms, found 11 plugins.
-Preloading 2 native plugins for Editor in 0.42 ms.
+Refreshing native plugins compatible for Editor in 3.90 ms, found 11 plugins.
+Preloading 2 native plugins for Editor in 0.38 ms.
 Unloading 7999 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 33 unused Assets / (3.4 MB). Loaded Objects now: 8859.
-Memory consumption went from 301.8 MB to 298.4 MB.
-Total: 5.832750 ms (FindLiveObjects: 0.298417 ms CreateObjectMapping: 0.156500 ms MarkObjects: 5.012917 ms  DeleteObjects: 0.364333 ms)
+Unloading 33 unused Assets / (3.4 MB). Loaded Objects now: 8858.
+Memory consumption went from 302.8 MB to 299.5 MB.
+Total: 5.783250 ms (FindLiveObjects: 0.329791 ms CreateObjectMapping: 0.167500 ms MarkObjects: 4.924042 ms  DeleteObjects: 0.361375 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -608,10 +356,17 @@ AssetImportParameters requested are different than current active one (requested
   custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/monoscript/fileName/SM.cs: d0d1a21d41505e1fe7c1508464699331 -> d230c50876ecbc23547bbc4367f55211
-  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 44bda4eb3a76a54bcf15b028e0125c7f -> 57fa4a837fb354d2035dff457405033f
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:CustomObjectIndexerAttribute: 3ead1caaecf1c488f20bcfeb224b6af5 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 142.601519 seconds.
+  path: Assets/Animal Asset/animate/cri/Cricket.controller
+  artifactKey: Guid(fe757fc07c796401b8e79b4d1755ce25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animal Asset/animate/cri/Cricket.controller using Guid(fe757fc07c796401b8e79b4d1755ce25) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '1f3de68e99add8940e781dc9ad399c3a') in 0.020938 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
