@@ -75,23 +75,26 @@ public class BlockManager : MonoBehaviour
         {
             renderer = materialGameObjects[BlockIndex].GetComponent<Renderer>();
         }
+        Color newColor;
         switch (StateIndex)
         {
             //State 0: gray out
             case 0:
                 foreach(var animal in animal)
                     animal.animator.SetTrigger("1");
-                renderer.material.color = Color.gray;
+                renderer.material.color = Color.black;
                 break;
             //State 1: switch the first accessory
             case 1:
+                newColor = new Color(158, 184, 206);
                 foreach(var animal in animal)
                     animal.animator.SetTrigger("2");
-                renderer.material.color = Color.red;
+                renderer.material.color = Color.white;
                 break;
             //State 1: switcht to the second accessory
             case 2:
-                renderer.material.color = Color.blue;
+                newColor = new Color(230, 217, 198);
+                renderer.material.color = Color.yellow;
                 break;
             default: break; // Handle invalid indices
         }
@@ -112,7 +115,7 @@ public class BlockManager : MonoBehaviour
         renderer.material.EnableKeyword("_EMISSION");
         Color finalEmissionColor = emissionColor * emissionIntensity;
         renderer.material.SetColor("_EmissionColor", finalEmissionColor);
-        yield return new WaitForSeconds(2.0f);
+        yield return new WaitForSeconds(6.5f);
         renderer.material.SetColor("_EmissionColor", Color.black);
     }
 
@@ -223,7 +226,7 @@ public class BlockManager : MonoBehaviour
                 //yield return new WaitForSeconds(15.0f);
                 //SetAllBlockColor(Color.white);
                 //ReturnAnimation();
-                yield return new WaitForSeconds(3.0f);
+                yield return new WaitForSeconds(15.0f);
                 GameManager.Instance.SwitchScene();
                 StopCoroutine(emitCoroutine);
             }
