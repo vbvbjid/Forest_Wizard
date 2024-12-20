@@ -44,7 +44,8 @@ public class newAM : MonoBehaviour
             {
                 index++;
             }
-            nextStartTime += 2.0f;
+            float interval = audioSource[index].clip.length; 
+            nextStartTime += interval;
         }
     }
     public void SwitchAudioState(int objectIndex)
