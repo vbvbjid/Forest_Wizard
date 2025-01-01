@@ -48,15 +48,6 @@ public class Animal : MonoBehaviour
         material.color = originalColor;
     }
 
-    void OnDestroy()
-    {
-        if (material != null)
-        {
-            material.color = originalColor;
-            Destroy(material);
-        }
-    }
-
     private void OnCollisionEnter(Collision collision)
     {
         if (!collision.gameObject.CompareTag("Wand")) return;
