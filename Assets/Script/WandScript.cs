@@ -6,7 +6,6 @@ using UnityEngine.UIElements;
 
 public class WandScript : MonoBehaviour
 {
-    public newAM[] newAM;
     public Collider selfCollider;
     private float collisionCooldown = 1.0f;
     private float lastCollisionTime;
@@ -43,30 +42,7 @@ public class WandScript : MonoBehaviour
                 // Assuming `code` is the result of looking up the string from `stringToEnum`
                 if (stringToEnum.TryGetValue(parent.name, out int code))
                 {
-                    if(newAM[code].blockActive)
-                        newAM[code].SwitchAudioState(blockNumber);
-                    /*switch (code)
-                    {
-                        case 0:
-                            if (Fox.blockActive)
-                                Fox.SwitchAudioState(blockNumber);
-                            break;
-                        case 1:
-                            if (Boar.blockActive)
-                                Boar.SwitchAudioState(blockNumber);
-                            break;
-                        case 2:
-                            if (Squirrel.blockActive)
-                                Squirrel.SwitchAudioState(blockNumber);
-                            break;
-                        case 3:
-                            if (Raccoon.blockActive)
-                                Raccoon.SwitchAudioState(blockNumber);
-                            break;
-                        default:
-                            Debug.LogError("Unknown animal");
-                            break;
-                    }*/
+                
                 }
                 else
                 {

@@ -73,7 +73,6 @@
     <Compile Include="Assets/new script/BGM.cs" />
     <Compile Include="Assets/SharedAssets/Scripts/Runtime/SceneMetaData.cs" />
     <Compile Include="Assets/Script/SelfDirectionDetector.cs" />
-    <Compile Include="Assets/Script/Method/Clock.cs" />
     <Compile Include="Assets/SharedAssets/Benchmark/BenchmarkShortcutManager.cs" />
     <Compile Include="Assets/SharedAssets/FirstPersonController/Scripts/FirstPersonController.cs" />
     <Compile Include="Assets/SharedAssets/FirstPersonController/Scripts/BasicRigidBodyPush.cs" />
@@ -81,7 +80,6 @@
     <Compile Include="Assets/Script/Swing.cs" />
     <Compile Include="Assets/SharedAssets/Scripts/Runtime/DisableIfTransitionManager.cs" />
     <Compile Include="Assets/Script/DebugLogToCanvas.cs" />
-    <Compile Include="Assets/Script/newAM.cs" />
     <Compile Include="Assets/SharedAssets/Scripts/Runtime/SceneLoader.cs" />
     <Compile Include="Assets/SharedAssets/FirstPersonController/Mobile/Scripts/VirtualInputs/UIVirtualTouchZone.cs" />
     <Compile Include="Assets/SharedAssets/Scripts/Runtime/FPSCounter.cs" />
@@ -90,7 +88,6 @@
     <Compile Include="Assets/SharedAssets/FirstPersonController/Mobile/Scripts/VirtualInputs/UIVirtualJoystick.cs" />
     <Compile Include="Assets/SharedAssets/Benchmark/PerformanceTestUtilities.cs" />
     <Compile Include="Assets/SharedAssets/FirstPersonController/Mobile/Scripts/VirtualInputs/UIVirtualButton.cs" />
-    <Compile Include="Assets/Script/BlockManager.cs" />
     <Compile Include="Assets/SharedAssets/FirstPersonController/InputSystem/FirstPersonInputs.cs" />
     <Compile Include="Assets/Script/GameManager.cs" />
     <Compile Include="Assets/Script/AudioManager.cs" />
@@ -104,9 +101,7 @@
     <Compile Include="Assets/Samples/Universal RP/14.0.11/URP Package Samples/SharedAssets/Scripts/AutoLoadPipelineAsset.cs" />
     <Compile Include="Assets/Samples/Universal RP/14.0.11/URP Package Samples/RendererFeatures/DepthBlit/DepthBlitEdgePass.cs" />
     <Compile Include="Assets/Script/spaceCollider.cs" />
-    <Compile Include="Assets/Script/buffer_AM.cs" />
     <Compile Include="Assets/SharedAssets/Scripts/Runtime/GlobalVolumeFeature.cs" />
-    <Compile Include="Assets/BaseDrum.cs" />
     <Compile Include="Assets/SharedAssets/Scripts/Runtime/FullscreenEffect.cs" />
     <Compile Include="Assets/Samples/Universal RP/14.0.11/URP Package Samples/LensFlares/Scripts/ScreenSpacePlacement.cs" />
     <Compile Include="Assets/touch.cs" />
@@ -133,10 +128,8 @@
     <Compile Include="Assets/Script/LightRangeVisualizer.cs" />
     <Compile Include="Assets/TheLazzyKnight/Stylized Environment VFX/Scripts/WindDirector.cs" />
     <Compile Include="Assets/Script/AudioBlocksManager.cs" />
-    <Compile Include="Assets/Script/ButtonTest.cs" />
     <Compile Include="Assets/Samples/Universal RP/14.0.11/URP Package Samples/RendererFeatures/BlitToRTHandle/BlitToRTHandlePass.cs" />
     <Compile Include="Assets/Trigger.cs" />
-    <Compile Include="Assets/Script/Method/utilities.cs" />
     <Compile Include="Assets/Samples/Universal RP/14.0.11/URP Package Samples/RendererFeatures/BlitToRTHandle/BlitToRTHandleRendererFeature.cs" />
     <Compile Include="Assets/Samples/Universal RP/14.0.11/URP Package Samples/RendererFeatures/KeepFrame/KeepFrameFeature.cs" />
     <Compile Include="Assets/Script/CameraFadeController.cs" />
@@ -157,6 +150,7 @@
     <None Include="Assets/SharedAssets/TextMeshPro/Shaders/TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets/SharedAssets/TextMeshPro/Resources/LineBreaking Following Characters.txt" />
     <None Include="Assets/SharedAssets/TextMeshPro/Resources/LineBreaking Leading Characters.txt" />
+    <None Include="Assets/Scenes 1/Tree_and_grass_stuffs/NewUnlitShader.shader" />
     <None Include="Assets/SharedAssets/Shaders/HLSL/Water.hlsl" />
     <None Include="Assets/SharedAssets/TextMeshPro/Shaders/TMP_SDF-Surface.shader" />
     <None Include="Assets/SharedAssets/TextMeshPro/Sprites/EmojiOne_Attribution.txt" />
@@ -174,9 +168,7 @@
     <None Include="Assets/SharedAssets/Shaders/HLSL/StencilOnly.shader" />
     <None Include="Assets/SharedAssets/FirstPersonController/Mobile/UI/UI_Cirkle_Shader.shader" />
     <None Include="Assets/SharedAssets/TextMeshPro/Shaders/TMP_SDF-Mobile-Masking.shader" />
-    <None Include="Assets/Script/buffer copy.txt" />
     <None Include="Assets/SharedAssets/TextMeshPro/Shaders/TMP_SDF-Overlay.shader" />
-    <None Include="Assets/Script/buffer.txt" />
     <None Include="Assets/SharedAssets/TextMeshPro/Shaders/TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets/SharedAssets/TextMeshPro/Shaders/TMP_Bitmap-Mobile.shader" />
     <None Include="Assets/SharedAssets/TextMeshPro/Shaders/TMP_SDF SSD.shader" />
