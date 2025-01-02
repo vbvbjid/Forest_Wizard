@@ -11,46 +11,55 @@ public class Animal : MonoBehaviour
     public bool trigger = false;
     public bool processing = false;
     private double scheduledStartTime;
-    public Material material;
-    private Color originalColor;
-
-    [SerializeField] private float breathingSpeed = 2f; // Adjust speed in inspector
-    [SerializeField] [Range(0f, 1f)] private float darkAmount = 0.5f;
+    public bool firstTouch = false;
+    public List<Material> myMaterials = new List<Material>();
+    private string pulseEffectId;
 
     public void Start()
     {
         scheduledStartTime = 1e6;
         audioSource = gameObject.GetComponent<AudioSource>();
         if (animator == null) animator = GetComponent<Animator>();
+        // Generate a unique ID for this instance's pulse effect
+        pulseEffectId = $"pulse_{gameObject.GetInstanceID()}";
     }
-    public void Sparkle(float duration)
+    void Update()
     {
-        StartCoroutine(SparkleCoroutine(duration));
-    }
-
-    private IEnumerator SparkleCoroutine(float duration)
-    {
-        float elapsedTime = 0f;
-        float h, s, v;
-        Color.RGBToHSV(originalColor, out h, out s, out v);
-        
-        while (elapsedTime < duration)
+        if (AudioSettings.dspTime >= scheduledStartTime && trigger)
         {
-            float breath = Mathf.Sin(elapsedTime * breathingSpeed * Mathf.PI) * 0.5f + 0.5f;
-            float newV = Mathf.Lerp(v, v * (1 - darkAmount), breath);
-            
-            material.color = Color.HSVToRGB(h, s, newV);
-            
-            elapsedTime += Time.deltaTime;
-            yield return null;
+            animator.SetBool("sing", true);
+            StopPulsing();
         }
-        
-        material.color = originalColor;
+    }
+    public void StartPulsing()
+    {
+        ShaderMethod.Instance.StartPulse(
+            pulseEffectId,
+            myMaterials,
+            pulseDuration: 2f,
+            minBrightness: 0.2f,
+            maxBrightness: 1.5f
+        );
     }
 
+    public void StopPulsing()
+    {
+        ShaderMethod.Instance.StopPulse(pulseEffectId);
+    }
+
+    void OnDestroy()
+    {
+        // Clean up when the object is destroyed
+        StopPulsing();
+    }
     private void OnCollisionEnter(Collision collision)
     {
-        if (!collision.gameObject.CompareTag("Wand")) return;
+        if (!collision.gameObject.CompareTag("Wand") && !collision.gameObject.CompareTag("hand")) return;
+        if (!firstTouch)
+        {
+            firstTouch = true;
+            GameManager.Instance.ShowAnimal(AnimalCode++);
+        }
         if (processing)
         {
             Debug.Log("processing");
@@ -114,7 +123,7 @@ public class Animal : MonoBehaviour
             double currentTime = GameManager.Instance.BGM.time;
             double remainTime = GameManager.Instance.BGM.clip.length - currentTime;
             scheduledStartTime = AudioSettings.dspTime + remainTime;
-            Sparkle((float)remainTime);
+            StartPulsing();
             audioSource.PlayScheduled(scheduledStartTime);
             StartCoroutine(ProcessTimer(remainTime + 2.0f));
             Debug.Log("bgm time: " + currentTime);
@@ -126,13 +135,6 @@ public class Animal : MonoBehaviour
             animator.SetBool("sing", false);
             audioSource.Stop();
             trigger = false;
-        }
-    }
-    void Update()
-    {
-        if (AudioSettings.dspTime >= scheduledStartTime && trigger)
-        {
-            animator.SetBool("sing", true);
         }
     }
 }

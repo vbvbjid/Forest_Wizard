@@ -9,6 +9,7 @@ public class WandScript : MonoBehaviour
     public Collider selfCollider;
     private float collisionCooldown = 1.0f;
     private float lastCollisionTime;
+    public bool firstGrab = false;
 
 
     void Start()
@@ -25,6 +26,11 @@ public class WandScript : MonoBehaviour
         //collision cooldown timmer
         if (Time.time - lastCollisionTime > collisionCooldown)
         {
+            if (gameObject.CompareTag("Wand") && collision.gameObject.CompareTag("hand") && !firstGrab)
+            {
+                firstGrab = true;
+                GameManager.Instance.ShowAnimal(0);
+            }
             if (collision.gameObject.CompareTag("Block"))
             {
                 // Access the AudioBlocksManager on the block and fill it with the current audio clip
@@ -42,11 +48,11 @@ public class WandScript : MonoBehaviour
                 // Assuming `code` is the result of looking up the string from `stringToEnum`
                 if (stringToEnum.TryGetValue(parent.name, out int code))
                 {
-                
+
                 }
                 else
                 {
-                    Debug.LogError("Invalid animal name: " + parent.name );
+                    Debug.LogError("Invalid animal name: " + parent.name);
                 }
             }
             // Handle collision

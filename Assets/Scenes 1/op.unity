@@ -2315,6 +2315,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selfCollider: {fileID: 0}
+  firstGrab: 0
 --- !u!1 &68766126
 GameObject:
   m_ObjectHideFlags: 0
@@ -4229,9 +4230,10 @@ MonoBehaviour:
   audioSource: {fileID: 135965511}
   trigger: 0
   processing: 0
-  material: {fileID: 0}
-  breathingSpeed: 2
-  darkAmount: 0.5
+  firstTouch: 0
+  myMaterials:
+  - {fileID: -3846018093981099296, guid: 1a2ee765010f5491fabbc5b0d93841e3, type: 3}
+  - {fileID: -2813467912831258332, guid: 1a2ee765010f5491fabbc5b0d93841e3, type: 3}
 --- !u!95 &135965513
 Animator:
   serializedVersion: 5
@@ -5623,9 +5625,11 @@ MonoBehaviour:
   audioSource: {fileID: 179829353}
   trigger: 0
   processing: 0
-  material: {fileID: 0}
-  breathingSpeed: 2
-  darkAmount: 0.5
+  firstTouch: 0
+  myMaterials:
+  - {fileID: -3846018093981099296, guid: 751ec00929acd43508745269fcd961d7, type: 3}
+  - {fileID: -6922793697723135513, guid: 751ec00929acd43508745269fcd961d7, type: 3}
+  - {fileID: -6629797300637803691, guid: 751ec00929acd43508745269fcd961d7, type: 3}
 --- !u!82 &179829353
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10037,6 +10041,7 @@ GameObject:
   - component: {fileID: 361032647}
   - component: {fileID: 361032652}
   - component: {fileID: 361032651}
+  - component: {fileID: 361032653}
   m_Layer: 0
   m_Name: GamManager
   m_TagString: Untagged
@@ -10064,7 +10069,11 @@ MonoBehaviour:
   currentAnimal: 0
   BGM: {fileID: 361032647}
   animalNumber: 3
-  ActivedAnimal: 00000000
+  Animal:
+  - {fileID: 504538650}
+  - {fileID: 32962665}
+  - {fileID: 1673277320}
+  - {fileID: 623517041}
 --- !u!4 &361032646
 Transform:
   m_ObjectHideFlags: 0
@@ -10198,6 +10207,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7cd7bd84822d442cdac161ac7e035e46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &361032653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 361032644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea64505fb840246c489b60e429f3f699, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &362955075
@@ -10486,7 +10507,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 384312100}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: 0.77574104, z: -0, w: 0.63105136}
   m_LocalPosition: {x: 374.69, y: -3.663, z: 157.23}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -10494,7 +10515,7 @@ Transform:
   - {fileID: 806763429}
   - {fileID: 1224435872}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 101.745, z: 0}
 --- !u!114 &384312106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11607,9 +11628,10 @@ GameObject:
   - component: {fileID: 417765582}
   - component: {fileID: 417765585}
   - component: {fileID: 417765584}
+  - component: {fileID: 417765586}
   m_Layer: 0
   m_Name: l_handMeshNode
-  m_TagString: Wand
+  m_TagString: hand
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11754,6 +11776,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selfCollider: {fileID: 417765584}
+  firstGrab: 0
+--- !u!54 &417765586
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 417765580}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &423405352
 GameObject:
   m_ObjectHideFlags: 0
@@ -16039,7 +16089,7 @@ Transform:
   m_GameObject: {fileID: 623517041}
   serializedVersion: 2
   m_LocalRotation: {x: 0.0042960914, y: -0.5970891, z: -0.00048809208, w: 0.8021633}
-  m_LocalPosition: {x: 374.69, y: -1.913, z: 161.14}
+  m_LocalPosition: {x: 374.54, y: -1.91, z: 160.33}
   m_LocalScale: {x: 1.218, y: 1.218, z: 1.218}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -21853,9 +21903,9 @@ MonoBehaviour:
   audioSource: {fileID: 827588552}
   trigger: 0
   processing: 0
-  material: {fileID: 0}
-  breathingSpeed: 2
-  darkAmount: 0.5
+  firstTouch: 0
+  myMaterials:
+  - {fileID: 1886820026795636259, guid: e2aef7b330f544b79bb15725ce987b6b, type: 3}
 --- !u!65 &827588554
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31175,7 +31225,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 308757b5e683943a2bb57253c622fdee, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 374.393
+      value: 374.8
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 308757b5e683943a2bb57253c622fdee, type: 3}
       propertyPath: m_LocalPosition.y
@@ -31183,7 +31233,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 308757b5e683943a2bb57253c622fdee, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 157.426
+      value: 156.81
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 308757b5e683943a2bb57253c622fdee, type: 3}
       propertyPath: m_LocalRotation.w
@@ -31322,6 +31372,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selfCollider: {fileID: 0}
+  firstGrab: 0
 --- !u!54 &1218410854
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -37134,9 +37185,9 @@ MonoBehaviour:
   audioSource: {fileID: 1465205604}
   trigger: 0
   processing: 0
-  material: {fileID: 0}
-  breathingSpeed: 2
-  darkAmount: 0.5
+  firstTouch: 0
+  myMaterials:
+  - {fileID: 4320992044206721228, guid: 521b9c92f3732441899514802769352b, type: 3}
 --- !u!82 &1465205606
 AudioSource:
   m_ObjectHideFlags: 0
@@ -43197,9 +43248,10 @@ GameObject:
   - component: {fileID: 1703753770}
   - component: {fileID: 1703753773}
   - component: {fileID: 1703753772}
+  - component: {fileID: 1703753774}
   m_Layer: 0
   m_Name: r_handMeshNode
-  m_TagString: Untagged
+  m_TagString: hand
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43344,6 +43396,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selfCollider: {fileID: 1703753772}
+  firstGrab: 0
+--- !u!54 &1703753774
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703753768}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1704589894
 GameObject:
   m_ObjectHideFlags: 0
@@ -54647,9 +54727,9 @@ MonoBehaviour:
   audioSource: {fileID: 5214609981653725367}
   trigger: 0
   processing: 0
-  material: {fileID: 2100000, guid: d2805a14309644819ab5c0ef272f88c3, type: 2}
-  breathingSpeed: 0.01
-  darkAmount: 0.5
+  firstTouch: 0
+  myMaterials:
+  - {fileID: 2100000, guid: d2805a14309644819ab5c0ef272f88c3, type: 2}
 --- !u!95 &5214609981653725369
 Animator:
   serializedVersion: 5
