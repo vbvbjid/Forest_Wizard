@@ -12,53 +12,52 @@ public class Animal : MonoBehaviour
     public bool processing = false;
     private double scheduledStartTime;
     public bool firstTouch = false;
-    public List<Material> myMaterials = new List<Material>();
-    private string pulseEffectId;
+    public List<Material> materialsToAnimate;
+    private ShaderMethod pulseUtility;
+    public Flower flower;
+    public List<Material> GetAllMaterials()
+    {
+        List<Material> materials = new List<Material>();
 
+        // Get all Renderers (including MeshRenderer and SkinnedMeshRenderer)
+        Renderer[] renderers = GetComponentsInChildren<Renderer>(true); // true includes inactive objects
+
+        foreach (Renderer renderer in renderers)
+        {
+            // Add all materials from each renderer
+            materials.AddRange(renderer.materials);
+        }
+
+        return materials;
+    }
     public void Start()
     {
         scheduledStartTime = 1e6;
         audioSource = gameObject.GetComponent<AudioSource>();
         if (animator == null) animator = GetComponent<Animator>();
-        // Generate a unique ID for this instance's pulse effect
-        pulseEffectId = $"pulse_{gameObject.GetInstanceID()}";
+        materialsToAnimate = GetAllMaterials();
+        pulseUtility = gameObject.AddComponent<ShaderMethod>();
+        pulseUtility.enabled = true;
     }
     void Update()
     {
         if (AudioSettings.dspTime >= scheduledStartTime && trigger)
         {
+            pulseUtility.StopPulsing(true);
             animator.SetBool("sing", true);
-            StopPulsing();
         }
     }
-    public void StartPulsing()
-    {
-        ShaderMethod.Instance.StartPulse(
-            pulseEffectId,
-            myMaterials,
-            pulseDuration: 2f,
-            minBrightness: 0.2f,
-            maxBrightness: 1.5f
-        );
-    }
 
-    public void StopPulsing()
-    {
-        ShaderMethod.Instance.StopPulse(pulseEffectId);
-    }
-
-    void OnDestroy()
-    {
-        // Clean up when the object is destroyed
-        StopPulsing();
-    }
     private void OnCollisionEnter(Collision collision)
     {
+        if (GameManager.Instance.end) return;
         if (!collision.gameObject.CompareTag("Wand") && !collision.gameObject.CompareTag("hand")) return;
         if (!firstTouch)
         {
             firstTouch = true;
-            GameManager.Instance.ShowAnimal(AnimalCode++);
+            if(AnimalCode == 2 || AnimalCode == 0)
+                flower.Grow();
+            GameManager.Instance.ShowAnimal(++AnimalCode);
         }
         if (processing)
         {
@@ -81,7 +80,7 @@ public class Animal : MonoBehaviour
             double currentTime = GameManager.Instance.BGM.time;
             double remainTime = GameManager.Instance.BGM.clip.length - currentTime;
             scheduledStartTime = AudioSettings.dspTime + remainTime;
-            //Sparkle((float)remainTime);
+            pulseUtility.StartPulsing(materialsToAnimate);
             audioSource.PlayScheduled(scheduledStartTime);
             StartCoroutine(ProcessTimer(remainTime + 2.0f));
             Debug.Log("bgm time: " + currentTime);
@@ -123,7 +122,7 @@ public class Animal : MonoBehaviour
             double currentTime = GameManager.Instance.BGM.time;
             double remainTime = GameManager.Instance.BGM.clip.length - currentTime;
             scheduledStartTime = AudioSettings.dspTime + remainTime;
-            StartPulsing();
+            pulseUtility.StartPulsing(materialsToAnimate);
             audioSource.PlayScheduled(scheduledStartTime);
             StartCoroutine(ProcessTimer(remainTime + 2.0f));
             Debug.Log("bgm time: " + currentTime);

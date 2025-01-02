@@ -4,121 +4,123 @@ using System.Collections.Generic;
 
 public class ShaderMethod : MonoBehaviour
 {
-    private static ShaderMethod instance;
-    public static ShaderMethod Instance
+    private Dictionary<Material, float> originalValues;
+    private List<Material> activeMaterials;
+    private bool isPulsing = false;
+    private float frequency = 0.5f;
+    private float darkFactor = 0.3f;
+    private float currentValue = 1.0f;
+    private bool isRecovering = false;
+
+    void Awake()
     {
-        get
-        {
-            if (instance == null)
-            {
-                GameObject go = new GameObject("ShaderMethod");
-                instance = go.AddComponent<ShaderMethod>();
-                DontDestroyOnLoad(go);
-            }
-            return instance;
-        }
+        // Initialize collections
+        originalValues = new Dictionary<Material, float>();
+        activeMaterials = new List<Material>();
+        enabled = true;  // Ensure component is enabled on creation
     }
 
-    private Dictionary<string, PulseData> activePulses = new Dictionary<string, PulseData>();
-
-    private class PulseData
+    public void StartPulsing(List<Material> materials, float pulseFrequency = 0.5f, float darkenAmount = 0.3f)
     {
-        public List<Material> materials;
-        public List<Color> originalColors;
-        public float pulseDuration;
-        public float minBrightness;
-        public float maxBrightness;
-        public Coroutine coroutine;
+        Debug.Log("pulse");
+        frequency = pulseFrequency;
+        darkFactor = darkenAmount;
+        isRecovering = false;
         
-        public PulseData(List<Material> mats, float duration, float minBright, float maxBright)
+        originalValues.Clear();
+        activeMaterials = new List<Material>(materials);
+        
+        // Store original values and set current value to match
+        foreach (Material mat in activeMaterials)
         {
-            materials = mats;
-            originalColors = new List<Color>();
-            foreach (Material mat in materials)
+            if (mat != null)
             {
-                originalColors.Add(mat.color);
+                float h, s, v;
+                Color.RGBToHSV(mat.color, out h, out s, out v);
+                originalValues[mat] = v;
             }
-            pulseDuration = duration;
-            minBrightness = minBright;
-            maxBrightness = maxBright;
-        }
-    }
-
-    public void StartPulse(
-        string pulseId,
-        List<Material> materials, 
-        float pulseDuration = 2f,
-        float minBrightness = 0.2f,
-        float maxBrightness = 1.5f)
-    {
-        // Stop existing pulse if it exists
-        if (activePulses.ContainsKey(pulseId))
-        {
-            StopPulse(pulseId);
         }
 
-        PulseData pulseData = new PulseData(materials, pulseDuration, minBrightness, maxBrightness);
-        pulseData.coroutine = StartCoroutine(PulseEffect(pulseData));
-        activePulses[pulseId] = pulseData;
+        currentValue = 1.0f;
+        isPulsing = true;
+        enabled = true;  // Ensure enabled when starting pulse
     }
 
-    public void StopPulse(string pulseId)
+    public void StopPulsing(bool restoreValues = true)
     {
-        if (activePulses.TryGetValue(pulseId, out PulseData pulseData))
+        isPulsing = false;
+        
+        if (restoreValues && originalValues != null)
         {
-            if (pulseData.coroutine != null)
+            foreach (Material mat in activeMaterials)
             {
-                StopCoroutine(pulseData.coroutine);
-            }
-            
-            // Reset materials to original colors
-            for (int i = 0; i < pulseData.materials.Count; i++)
-            {
-                if (pulseData.materials[i] != null)
+                if (mat != null && originalValues.ContainsKey(mat))
                 {
-                    pulseData.materials[i].color = pulseData.originalColors[i];
+                    float h, s, v;
+                    Color.RGBToHSV(mat.color, out h, out s, out v);
+                    Color newColor = Color.HSVToRGB(h, s, originalValues[mat]);
+                    mat.color = new Color(newColor.r, newColor.g, newColor.b, mat.color.a);
                 }
             }
-            
-            activePulses.Remove(pulseId);
         }
+
+        originalValues.Clear();
+        activeMaterials.Clear();
     }
 
-    public void StopAllPulses()
+    void Update()
     {
-        List<string> pulseIds = new List<string>(activePulses.Keys);
-        foreach (string pulseId in pulseIds)
-        {
-            StopPulse(pulseId);
-        }
-    }
+        if (!isPulsing || activeMaterials == null || activeMaterials.Count == 0)
+            return;
 
-    private IEnumerator PulseEffect(PulseData pulseData)
-    {
-        float elapsedTime = 0f;
-        
-        while (true)
+        float deltaTime = Time.deltaTime * frequency;
+
+        if (!isRecovering)
         {
-            elapsedTime += Time.deltaTime;
-            
-            float brightness = Mathf.Lerp(pulseData.minBrightness, pulseData.maxBrightness, 
-                (Mathf.Sin(elapsedTime * (2f * Mathf.PI) / pulseData.pulseDuration) + 1f) / 2f);
-            
-            for (int i = 0; i < pulseData.materials.Count; i++)
+            // Darkening phase - quick drop
+            currentValue = Mathf.MoveTowards(currentValue, darkFactor, deltaTime * 2f);
+            if (currentValue <= darkFactor)
             {
-                if (pulseData.materials[i] != null)
+                isRecovering = true;
+            }
+        }
+        else
+        {
+            // Recovery phase - gradual brighten
+            currentValue = Mathf.MoveTowards(currentValue, 1.0f, deltaTime * 0.5f);
+            if (currentValue >= 1.0f)
+            {
+                isRecovering = false;
+            }
+        }
+
+        foreach (Material mat in activeMaterials)
+        {
+            if (mat != null && originalValues.ContainsKey(mat))
+            {
+                float h, s, v;
+                Color.RGBToHSV(mat.color, out h, out s, out v);
+                float targetValue = originalValues[mat] * currentValue;
+                Color newColor = Color.HSVToRGB(h, s, targetValue);
+                mat.color = new Color(newColor.r, newColor.g, newColor.b, mat.color.a);
+            }
+        }
+    }
+
+    void OnDisable()
+    {
+        if (isPulsing)
+        {
+            foreach (Material mat in activeMaterials)
+            {
+                if (mat != null && originalValues.ContainsKey(mat))
                 {
-                    Color originalColor = pulseData.originalColors[i];
-                    pulseData.materials[i].color = new Color(
-                        originalColor.r * brightness,
-                        originalColor.g * brightness,
-                        originalColor.b * brightness,
-                        originalColor.a
-                    );
+                    float h, s, v;
+                    Color.RGBToHSV(mat.color, out h, out s, out v);
+                    Color newColor = Color.HSVToRGB(h, s, originalValues[mat]);
+                    mat.color = new Color(newColor.r, newColor.g, newColor.b, mat.color.a);
                 }
             }
-            
-            yield return null;
         }
     }
 }
